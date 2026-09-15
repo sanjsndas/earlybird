@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Early Bird Bakes</title>
+  <meta name="description" content="Get in touch with Early Bird Bakes. Questions, recipe feedback, or just want to say hello? We'd love to hear from you.">
+  <meta name="author" content="Maya Collins">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://earlybirdbakes.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact | Early Bird Bakes">
+  <meta property="og:description" content="Questions, recipe feedback, or just want to say hello? We'd love to hear from you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earlybirdbakes.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & basic styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---- RESET & VARIABLES ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fcf9f4;
+      --surface: #ffffff;
+      --border: #e7e0d8;
+      --text: #2c2722;
+      --muted: #6b625a;
+      --accent: #b45a3b;
+      --accent-soft: #f3e9e2;
+      --heading-font: 'DM Serif Display', Georgia, serif;
+      --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --article-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-hover: 0 8px 20px rgba(0,0,0,0.06);
+      --transition: 0.2s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.6;
+      font-size: 17px;
+      font-weight: 350;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.2rem; }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---- UTILITY ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .text-muted { color: var(--muted); }
+    .text-accent { color: var(--accent); }
+    .text-small { font-size: 0.875rem; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-4 { margin-top: 1rem; }
+    .mt-6 { margin-top: 2rem; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 2rem; }
+
+    /* ---- HEADER / NAV ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0 16px;
+      background-color: var(--surface);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-bottom: 4px;
+    }
+
+    .logo-text {
+      font-family: var(--heading-font);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--body-font);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: -2px;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--transition), color var(--transition);
+    }
+
+    .main-nav a:hover {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-family: var(--body-font);
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---- SEARCH BAR (hidden by default) ---- */
+    .search-bar {
+      display: none;
+      padding: 16px 0 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      background: var(--bg);
+    }
+
+    .search-form button {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .search-form button:hover {
+      background: #9e4a2e;
+    }
+
+    /* ---- CONTACT PAGE SPECIFIC ---- */
+    .contact-hero {
+      padding: 48px 0 24px;
+      text-align: center;
+    }
+
+    .contact-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-hero p {
+      color: var(--muted);
+      max-width: 550px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 48px;
+      padding: 24px 0 72px;
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    .contact-form-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px 40px 44px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-form-wrap h2 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-form-wrap > p {
+      color: var(--muted);
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--text);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b625a' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      cursor: pointer;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .contact-form-wrap {
+        padding: 28px 20px 32px;
+      }
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 16px 40px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+      letter-spacing: 0.02em;
+    }
+
+    .btn-primary:hover {
+      background: #9e4a2e;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+
+    /* ---- SIDEBAR INFO CARDS ---- */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 28px 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .info-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    .info-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .info-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-soft);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .info-item strong {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--text);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .info-item span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .info-item a {
+      color: var(--accent);
+      font-weight: 450;
+    }
+
+    .info-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- MAP PLACEHOLDER ---- */
+    .map-placeholder {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #e8e0d8 0%, #f5f0ea 100%);
+      position: relative;
+    }
+
+    .map-placeholder::after {
+      content: "📍 Portland, Oregon";
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 450;
+      background: var(--surface);
+      padding: 10px 22px;
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    /* ---- FAQ (matching home) ---- */
+    .faq-section {
+      padding: 24px 0 24px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    .faq-question {
+      font-weight: 500;
+      font-size: 1.05rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 8px 0;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.4rem;
+      color: var(--accent);
+      transition: transform var(--transition);
+    }
+
+    .faq-item.open .faq-question::after {
+      content: '−';
+      transform: rotate(0deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: var(--muted);
+      padding-right: 40px;
+      font-size: 0.95rem;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-bottom: 16px;
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+      margin-top: 48px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-family: var(--body-font);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      .contact-hero h1 { font-size: 2.2rem; }
+      .contact-hero p { font-size: 1rem; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav { gap: 16px; font-size: 0.8rem; }
+    }
+
+    @media (max-width: 500px) {
+      .contact-form-wrap {
+        padding: 22px 16px 28px;
+      }
+      .btn-primary {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">E</div>
+      <div class="logo-text">Early Bird Bakes<span>Est. 2019</span></div>
+    </a>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" style="color: var(--text); border-bottom-color: var(--accent);">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="search-toggle" onclick="toggleSearch()" aria-label="Toggle search">
+        <span>🔍</span> Search
+      </button>
+    </div>
+  </div>
+  <div class="container search-bar" id="searchBar">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <input type="text" id="searchInput" placeholder="Search recipes, techniques, stories..." aria-label="Search articles">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+  <!-- HERO -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Say Hello</h1>
+      <p>Whether you have a question about a recipe, a suggestion for a future post, or just want to share a photo of your latest bake — I'm all ears (and flour).</p>
+    </div>
+  </section>
+
+  <!-- CONTACT LAYOUT -->
+  <div class="container contact-layout">
+
+    <!-- LEFT: FORM -->
+    <div class="contact-form-wrap">
+      <h2>Send a Message</h2>
+      <p>I read every email personally. Expect a reply within 2–3 days (unless I'm deep in a proof).</p>
+
+      <form id="contactForm" onsubmit="handleContactSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Julia Child" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="general">General Question</option>
+            <option value="recipe">Recipe Help / Troubleshooting</option>
+            <option value="collaboration">Collaboration / Partnership</option>
+            <option value="feedback">Feedback on a Post</option>
+            <option value="other">Something Else</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Tell me what's on your mind. If you're asking about a specific recipe, let me know which one!" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-note">I'll never share your email with anyone. This form is just between us.</p>
+      </form>
+    </div>
+
+    <!-- RIGHT: INFO + MAP -->
+    <aside class="contact-info">
+
+      <div class="info-card">
+        <h3>Other Ways to Reach Me</h3>
+
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <span><a href="mailto:hello@earlybirdbakes.com">hello@earlybirdbakes.com</a></span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📬</div>
+          <div>
+            <strong>Snail Mail</strong>
+            <span>Early Bird Bakes<br>PO Box 1234<br>Portland, OR 97201</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📸</div>
+          <div>
+            <strong>Instagram</strong>
+            <span><a href="#">@earlybirdbakes</a> — DMs open</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">⏰</div>
+          <div>
+            <strong>Response Time</strong>
+            <span>Usually within 2–3 days. Weekends are for baking, not emailing.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card" style="padding-bottom: 24px;">
+        <h3>Find the Kitchen</h3>
+        <p>I bake from a small home kitchen in Portland, Oregon. It's not open to the public (health code, and also my dog), but I love knowing where my readers are baking from.</p>
+        <div class="map-placeholder" aria-label="Map placeholder showing Portland, Oregon"></div>
+        <p class="text-small text-muted" style="margin-top: 16px; margin-bottom: 0;">📍 Portland, Oregon · Pacific Time (PT)</p>
+      </div>
+
+      <!-- FAQ (compact) -->
+      <div class="info-card">
+        <h3>Quick Answers</h3>
+        <div class="faq-section" style="padding: 0;">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Do you accept guest posts?</div>
+            <div class="faq-answer">Rarely, but I'm open to pitches from fellow bakers. Send me a short outline and a link to your work. No sponsored content, ever.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Can I republish a recipe?</div>
+            <div class="faq-answer">You're welcome to share a link and quote a short excerpt with credit. Full recipes require written permission. See my Terms page for details.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Do you do custom recipe development?</div>
+            <div class="faq-answer">I occasionally take on freelance recipe development and food writing. Reach out with your project details and timeline.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Why didn't my bread rise?</div>
+            <div class="faq-answer">Nine times out of ten, it's the yeast — either expired or the liquid was too hot. Check out my full troubleshooting guide on the blog for more help.</div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom: 8px;">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:1.4rem;">E</div>
+        <div class="logo-text" style="font-size:1.4rem;">Early Bird Bakes</div>
+      </div>
+      <p>Honest recipes and kitchen stories from a small home bakery. Baked fresh since 2019.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Recipes</h4>
+      <ul>
+        <li><a href="index.html">Bread</a></li>
+        <li><a href="index.html">Pastry</a></li>
+        <li><a href="index.html">Cakes</a></li>
+        <li><a href="index.html">Technique</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="mailto:hello@earlybirdbakes.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2025 Early Bird Bakes. All rights reserved.</span>
+    <span>Made with flour, butter, and stubbornness.</span>
+  </div>
+</footer>
+
+<!-- ===== SCHEMA MARKUP ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Early Bird Bakes",
+  "description": "Get in touch with Early Bird Bakes. Questions, recipe feedback, or just want to say hello?",
+  "url": "https://earlybirdbakes.com/contact.html",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Early Bird Bakes",
+    "email": "hello@earlybirdbakes.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Portland",
+      "addressRegion": "OR",
+      "postalCode": "97201",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // ---- SEARCH (reused from main site) ----
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+    const query = document.getElementById('searchInput').value.trim();
+    if (!query) return;
+    // Redirect to home with search query (in a real site, this would be a search page)
+    window.location.href = 'index.html?search=' + encodeURIComponent(query);
+  }
+
+  // ---- FAQ TOGGLE ----
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+
+  // ---- CONTACT FORM SUBMIT ----
+  function handleContactSubmit(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    // Simulate sending (in a real site, this would POST to a server)
+    const btn = e.target.querySelector('.btn-primary');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    btn.style.opacity = '0.7';
+
+    setTimeout(() => {
+      alert(`Thanks, ${name}! Your message about "${subject}" has been sent. I'll get back to you at ${email} within 2–3 days. 🥐`);
+      e.target.reset();
+      btn.textContent = originalText;
+      btn.disabled = false;
+      btn.style.opacity = '1';
+    }, 800);
+  }
+
+  // ---- INIT ----
+  document.addEventListener('DOMContentLoaded', () => {
+    // Focus name field on load
+    const nameField = document.getElementById('name');
+    if (nameField) {
+      // Only focus if not on mobile (avoids keyboard popping up immediately)
+      if (window.innerWidth > 700) {
+        nameField.focus();
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Early Bird Bakes</title>
+  <meta name="description" content="Learn about Maya Collins and the story behind Early Bird Bakes — a cozy home baking blog with honest recipes and kitchen stories.">
+  <meta name="author" content="Maya Collins">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://earlybirdbakes.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Early Bird Bakes">
+  <meta property="og:description" content="Honest recipes, kitchen stories, and the baker behind Early Bird Bakes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earlybirdbakes.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & basic styling (same as home) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---- RESET & VARIABLES (copy from home) ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fcf9f4;
+      --surface: #ffffff;
+      --border: #e7e0d8;
+      --text: #2c2722;
+      --muted: #6b625a;
+      --accent: #b45a3b;
+      --accent-soft: #f3e9e2;
+      --heading-font: 'DM Serif Display', Georgia, serif;
+      --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --article-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-hover: 0 8px 20px rgba(0,0,0,0.06);
+      --transition: 0.2s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.6;
+      font-size: 17px;
+      font-weight: 350;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.2rem; }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---- UTILITY ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .text-muted { color: var(--muted); }
+    .text-accent { color: var(--accent); }
+    .text-small { font-size: 0.875rem; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-4 { margin-top: 1rem; }
+    .mt-6 { margin-top: 2rem; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 2rem; }
+
+    /* ---- HEADER / NAV ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0 16px;
+      background-color: var(--surface);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-bottom: 4px;
+    }
+
+    .logo-text {
+      font-family: var(--heading-font);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--body-font);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: -2px;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--transition), color var(--transition);
+    }
+
+    .main-nav a:hover {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-family: var(--body-font);
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---- SEARCH BAR (hidden by default) ---- */
+    .search-bar {
+      display: none;
+      padding: 16px 0 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      background: var(--bg);
+    }
+
+    .search-form button {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .search-form button:hover {
+      background: #9e4a2e;
+    }
+
+    /* ---- ABOUT PAGE SPECIFIC ---- */
+    .about-hero {
+      padding: 48px 0 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-hero-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .about-hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/5;
+    }
+
+    .about-hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .about-hero-content .lead {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+      font-weight: 350;
+    }
+
+    .about-body {
+      padding: 24px 0 64px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .about-body p {
+      margin-bottom: 1.5em;
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .about-body h2 {
+      margin-top: 2em;
+      margin-bottom: 0.8em;
+    }
+
+    .about-body h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .about-body ul {
+      margin-bottom: 1.8em;
+      padding-left: 1.6em;
+    }
+
+    .about-body li {
+      margin-bottom: 0.6em;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .about-body blockquote {
+      border-left: 4px solid var(--accent);
+      padding-left: 24px;
+      margin: 2em 0;
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .about-body img {
+      margin: 2em 0;
+      border-radius: var(--radius);
+      width: 100%;
+    }
+
+    .signature {
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-top: 12px;
+      font-style: italic;
+    }
+
+    /* ---- VALUES GRID ---- */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin: 32px 0 48px;
+    }
+
+    .value-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      transition: box-shadow var(--transition);
+    }
+
+    .value-card:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .value-card .icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .value-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+
+    /* ---- TEAM ---- */
+    .team-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 48px 40px;
+      margin: 48px 0;
+      box-shadow: var(--shadow);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 24px;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-avatar {
+      width: 100px;
+      height: 100px;
+      background: var(--accent-soft);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--heading-font);
+      font-size: 2.4rem;
+      color: var(--accent);
+      margin: 0 auto 16px;
+      border: 3px solid var(--border);
+    }
+
+    .team-member h4 {
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    .team-member p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ---- CTA ---- */
+    .about-cta {
+      text-align: center;
+      padding: 32px 0 64px;
+    }
+
+    .about-cta h2 {
+      margin-bottom: 12px;
+    }
+
+    .about-cta p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 14px 36px;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #9e4a2e;
+      color: white;
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+      margin-top: 48px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-family: var(--body-font);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 900px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .about-hero-image img {
+        aspect-ratio: 16/9;
+      }
+      .about-hero-content h1 {
+        font-size: 2.4rem;
+      }
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav { gap: 16px; font-size: 0.8rem; }
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      .team-section {
+        padding: 32px 20px;
+      }
+      .about-hero-content h1 {
+        font-size: 2rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-hero-content .lead {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">E</div>
+      <div class="logo-text">Early Bird Bakes<span>Est. 2019</span></div>
+    </a>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" style="color: var(--text); border-bottom-color: var(--accent);">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="search-toggle" onclick="toggleSearch()" aria-label="Toggle search">
+        <span>🔍</span> Search
+      </button>
+    </div>
+  </div>
+  <div class="container search-bar" id="searchBar">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <input type="text" id="searchInput" placeholder="Search recipes, techniques, stories..." aria-label="Search articles">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <!-- About Hero -->
+  <section class="container about-hero">
+    <div class="about-hero-image">
+      <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=1000&fit=crop" alt="Maya Collins, baker and writer behind Early Bird Bakes, in her kitchen">
+    </div>
+    <div class="about-hero-content">
+      <h1>About Early Bird Bakes</h1>
+      <p class="lead">Honest recipes, kitchen stories, and a whole lot of flour — from my small home kitchen to yours.</p>
+      <p class="text-muted" style="font-size: 1rem;">I'm Maya Collins. I've been baking bread since 2014, writing about it since 2019, and burning things regularly the entire time.</p>
+      <p class="signature">— Maya</p>
+    </div>
+  </section>
+
+  <!-- About Body -->
+  <section class="container about-body">
+    <h2>The short version</h2>
+    <p>Early Bird Bakes is a one-woman blog about bread, pastry, and the quiet joy of making things with your hands. I started it because I was tired of emailing recipes to friends in all-caps. I kept it going because I fell in love with the conversation — the questions, the troubleshooting, the "I made this and it actually worked" messages.</p>
+
+    <p>I believe good baking is less about perfection and more about paying attention: to the feel of dough, the smell of butter browning, the sound of a crust crackling as it cools. My recipes are detailed, tested at least three times, and full of the kind of notes you'd get from a friend who's already made the mistakes so you don't have to.</p>
+
+    <h2>What you'll find here</h2>
+    <ul>
+      <li><strong>Recipes that work.</strong> Every recipe is developed and tested in a real home kitchen — no professional equipment, no impossible-to-find ingredients.</li>
+      <li><strong>Technique guides.</strong> Deep dives into hydration, lamination, fermentation, and all the nerdy stuff that makes baking click.</li>
+      <li><strong>Kitchen stories.</strong> The failures, the surprises, the 5 a.m. epiphanies. Baking is a practice, and I write about the whole messy process.</li>
+      <li><strong>No gatekeeping.</strong> You don't need a marble countertop or a pastry degree. You need curiosity and a willingness to try again.</li>
+    </ul>
+
+    <blockquote>“Baking is a form of meditation. The measuring, the mixing, the waiting — it all slows you down. It reminds you that good things take time.”</blockquote>
+
+    <h2>What I believe</h2>
+    <p>I believe recipes should be clear. I believe technique matters more than gadgets — a $5 dough scraper beats a $300 mixer for most tasks. I believe failure is part of learning, and that every baker has made hockey puck cookies. I believe baking is for everyone.</p>
+
+    <p>I also believe in paying attention to the small things: the way a starter smells when it's ready, the exact shade of golden brown on a pie crust, the sound of a good loaf cooling on a rack. These details are what make baking feel like a craft instead of a chore.</p>
+
+    <h2>The team (it's mostly me)</h2>
+    <p>I develop the recipes, take the photos, write the stories, and eat the results. My partner, Tom, is the official taste-tester — his "it's fine" means "not good enough." My dog, Biscuit, cleans up flour spills and provides emotional support during failed bakes.</p>
+
+    <!-- Values grid -->
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="icon">🌾</span>
+        <h3>Honest recipes</h3>
+        <p>No vague instructions, no missing steps. Just clear, tested recipes with all the notes I wish I'd had starting out.</p>
+      </div>
+      <div class="value-card">
+        <span class="icon">🥖</span>
+        <h3>Real kitchen</h3>
+        <p>Everything here is made in a small home kitchen with basic equipment. If I can do it, so can you.</p>
+      </div>
+      <div class="value-card">
+        <span class="icon">📝</span>
+        <h3>Stories matter</h3>
+        <p>Recipes are more than instructions — they're memories, rituals, and small acts of care. I write about all of it.</p>
+      </div>
+      <div class="value-card">
+        <span class="icon">🫶</span>
+        <h3>Baking for everyone</h3>
+        <p>No gatekeeping, no perfectionism. Whether you're a beginner or a seasoned baker, there's something here for you.</p>
+      </div>
+    </div>
+
+    <!-- Team / bios -->
+    <div class="team-section">
+      <h2 style="margin-top: 0; text-align: center;">The humans (and animals) behind the bakes</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-avatar">M</div>
+          <h4>Maya Collins</h4>
+          <p>Founder, recipe developer, writer, photographer. Former line cook. Still burns things.</p>
+        </div>
+        <div class="team-member">
+          <div class="team-avatar">T</div>
+          <h4>Tom</h4>
+          <p>Chief taste-tester. Provides brutally honest feedback. Also does the dishes.</p>
+        </div>
+        <div class="team-member">
+          <div class="team-avatar">B</div>
+          <h4>Biscuit</h4>
+          <p>Floor cleaner, crumb patrol, emotional support dog. Rarely helpful, always present.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <p><strong>Do you use a stand mixer?</strong> Rarely. I mix most doughs by hand and use a simple hand mixer for cakes. It's not about the equipment — it's about the technique.</p>
+    <p><strong>Can I substitute ingredients?</strong> Sometimes. I include substitution notes where I've tested them. But baking is chemistry — changing one thing affects everything else. When in doubt, follow the recipe first, then experiment.</p>
+    <p><strong>Why "Early Bird"?</strong> Because I bake in the mornings. It started as a sleep thing and became a ritual. There's something magic about making bread while the rest of the world is still asleep.</p>
+    <p><strong>Can I share your recipes?</strong> Yes! Share links, quote excerpts, tell your friends. Just don't republish full recipes without permission. And always credit Early Bird Bakes.</p>
+
+    <h2>Let's stay in touch</h2>
+    <p>I send a newsletter every Saturday — one new recipe, a technique deep-dive, and something I burned that week. It's free, it's honest, and you can unsubscribe anytime.</p>
+
+    <div class="about-cta">
+      <h2>Ready to bake something?</h2>
+      <p>Start with a recipe, or just say hello. I love hearing from people who've made something from the blog.</p>
+      <a href="index.html" class="btn">Browse recipes</a>
+      <a href="contact.html" class="btn" style="background: transparent; color: var(--accent); border: 1px solid var(--accent); margin-left: 12px;">Contact me</a>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom: 8px;">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:1.4rem;">E</div>
+        <div class="logo-text" style="font-size:1.4rem;">Early Bird Bakes</div>
+      </div>
+      <p>Honest recipes and kitchen stories from a small home bakery. Baked fresh since 2019.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Recipes</h4>
+      <ul>
+        <li><a href="index.html">Bread</a></li>
+        <li><a href="index.html">Pastry</a></li>
+        <li><a href="index.html">Cakes</a></li>
+        <li><a href="index.html">Technique</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="mailto:hello@earlybirdbakes.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2025 Early Bird Bakes. All rights reserved.</span>
+    <span>Made with flour, butter, and stubbornness.</span>
+  </div>
+</footer>
+
+<!-- ===== SCHEMA MARKUP ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Early Bird Bakes",
+  "description": "The story behind Early Bird Bakes — a cozy home baking blog with honest recipes and kitchen stories.",
+  "url": "https://earlybirdbakes.com/about.html",
+  "author": {
+    "@type": "Person",
+    "name": "Maya Collins"
+  }
+}
+</script>
+
+<!-- ===== JAVASCRIPT (minimal, for search toggle & interactions) ===== -->
+<script>
+  // ---- SEARCH ----
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    if (!query) return;
+    // In a real site, this would filter articles. For now, redirect to home with a hash.
+    window.location.href = 'index.html?search=' + encodeURIComponent(query);
+  }
+
+  // ---- SMOOTH SCROLL FOR ANCHOR LINKS ----
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>

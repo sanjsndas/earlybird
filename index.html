@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early Bird Bakes | Honest recipes & stories from a home kitchen</title>
+  <meta name="description" content="Early Bird Bakes is a cozy independent blog about bread, pastries, and everyday baking. Find detailed recipes, technique guides, and kitchen stories.">
+  <meta name="author" content="Maya Collins">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://earlybirdbakes.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Early Bird Bakes | Honest recipes & stories from a home kitchen">
+  <meta property="og:description" content="Bread, pastries, and everyday baking with detailed recipes and kitchen stories.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earlybirdbakes.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & basic styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---- RESET & VARIABLES ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fcf9f4;
+      --surface: #ffffff;
+      --border: #e7e0d8;
+      --text: #2c2722;
+      --muted: #6b625a;
+      --accent: #b45a3b;
+      --accent-soft: #f3e9e2;
+      --heading-font: 'DM Serif Display', Georgia, serif;
+      --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --article-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-hover: 0 8px 20px rgba(0,0,0,0.06);
+      --transition: 0.2s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.6;
+      font-size: 17px;
+      font-weight: 350;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.2rem; }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---- UTILITY ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .text-muted { color: var(--muted); }
+    .text-accent { color: var(--accent); }
+    .text-small { font-size: 0.875rem; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-4 { margin-top: 1rem; }
+    .mt-6 { margin-top: 2rem; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 2rem; }
+
+    /* ---- HEADER / NAV ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0 16px;
+      background-color: var(--surface);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-bottom: 4px;
+    }
+
+    .logo-text {
+      font-family: var(--heading-font);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--body-font);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: -2px;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--transition), color var(--transition);
+    }
+
+    .main-nav a:hover {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-family: var(--body-font);
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---- SEARCH BAR (hidden by default) ---- */
+    .search-bar {
+      display: none;
+      padding: 16px 0 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      background: var(--bg);
+    }
+
+    .search-form button {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .search-form button:hover {
+      background: #9e4a2e;
+    }
+
+    /* ---- LAYOUT GRID ---- */
+    .home-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 48px;
+      padding: 48px 0;
+    }
+
+    @media (max-width: 900px) {
+      .home-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    /* ---- FEATURED ARTICLE ---- */
+    .featured-article {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      margin-bottom: 48px;
+      box-shadow: var(--shadow);
+    }
+
+    .featured-article img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .featured-content {
+      padding: 32px 36px 36px;
+    }
+
+    .category-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 4px 12px;
+      border-radius: 30px;
+      margin-bottom: 16px;
+    }
+
+    .featured-article h2 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .featured-article .excerpt {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+
+    .meta {
+      display: flex;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      align-items: center;
+    }
+
+    .meta .dot {
+      width: 3px;
+      height: 3px;
+      background: var(--border);
+      border-radius: 50%;
+    }
+
+    /* ---- ARTICLE CARDS (GRID) ---- */
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+    }
+
+    .section-header a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    @media (max-width: 600px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .article-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow var(--transition), transform var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+
+    .article-card img {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .card-content {
+      padding: 20px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-content h3 {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .card-content .excerpt {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .card-content .meta {
+      font-size: 0.75rem;
+    }
+
+    /* ---- SIDEBAR ---- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .widget {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 24px 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .widget h3 {
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    .author-bio {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .author-avatar {
+      width: 56px;
+      height: 56px;
+      background: var(--accent-soft);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--heading-font);
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+
+    .author-bio p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .author-bio strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .popular-list {
+      list-style: none;
+    }
+
+    .popular-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .popular-list li:last-child {
+      border-bottom: none;
+    }
+
+    .popular-list .num {
+      font-family: var(--heading-font);
+      font-size: 1.4rem;
+      color: var(--accent);
+      line-height: 1;
+      min-width: 28px;
+    }
+
+    .popular-list h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: var(--body-font);
+      line-height: 1.4;
+    }
+
+    .popular-list .meta {
+      font-size: 0.7rem;
+      margin-top: 4px;
+    }
+
+    /* ---- NEWSLETTER ---- */
+    .newsletter-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 48px 40px;
+      margin: 48px 0;
+      text-align: center;
+    }
+
+    .newsletter-section h2 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .newsletter-section p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 24px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 440px;
+      margin: 0 auto;
+      gap: 8px;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 14px 20px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+    }
+
+    .newsletter-form button {
+      padding: 14px 28px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover {
+      background: #9e4a2e;
+    }
+
+    /* ---- ARTICLE FULL VIEW ---- */
+    .article-full {
+      display: none;
+      padding: 48px 0 72px;
+    }
+
+    .article-full.active {
+      display: block;
+    }
+
+    .article-full h1 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .article-full .meta {
+      margin-bottom: 24px;
+    }
+
+    .article-full .article-body {
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .article-full .article-body p {
+      margin-bottom: 1.5em;
+    }
+
+    .article-full .article-body h2 {
+      margin-top: 2em;
+      margin-bottom: 0.8em;
+    }
+
+    .article-full .article-body h3 {
+      margin-top: 1.6em;
+      margin-bottom: 0.6em;
+    }
+
+    .article-full .article-body ul, 
+    .article-full .article-body ol {
+      margin-bottom: 1.5em;
+      padding-left: 1.6em;
+    }
+
+    .article-full .article-body li {
+      margin-bottom: 0.4em;
+    }
+
+    .article-full .article-body blockquote {
+      border-left: 4px solid var(--accent);
+      padding-left: 24px;
+      margin: 2em 0;
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    .article-full .article-body img {
+      margin: 2em 0;
+      width: 100%;
+    }
+
+    /* ---- FAQ ---- */
+    .faq-section {
+      padding: 48px 0 24px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    .faq-question {
+      font-weight: 500;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 8px 0;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.4rem;
+      color: var(--accent);
+      transition: transform var(--transition);
+    }
+
+    .faq-item.open .faq-question::after {
+      content: '−';
+      transform: rotate(0deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: var(--muted);
+      padding-right: 40px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-bottom: 16px;
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+      margin-top: 48px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-family: var(--body-font);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .featured-article h2 { font-size: 1.7rem; }
+      .featured-content { padding: 24px; }
+      .newsletter-section { padding: 32px 20px; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-form button { width: 100%; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav { gap: 16px; font-size: 0.8rem; }
+      .article-full h1 { font-size: 2rem; }
+    }
+
+    @media (max-width: 500px) {
+      .meta { flex-wrap: wrap; gap: 8px; }
+      .meta .dot { display: none; }
+    }
+
+    /* hidden helper */
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo" onclick="showHome(event)">
+      <div class="logo-icon">E</div>
+      <div class="logo-text">Early Bird Bakes<span>Est. 2019</span></div>
+    </a>
+    <ul class="main-nav">
+     <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="search-toggle" onclick="toggleSearch()" aria-label="Toggle search">
+        <span>🔍</span> Search
+      </button>
+    </div>
+  </div>
+  <div class="container search-bar" id="searchBar">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <input type="text" id="searchInput" placeholder="Search recipes, techniques, stories..." aria-label="Search articles">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main id="mainContent">
+
+  <!-- HOME VIEW (default) -->
+  <div id="homeView">
+    <div class="container home-layout">
+
+      <!-- LEFT COLUMN: ARTICLES -->
+      <div class="primary-content">
+
+        <!-- Featured article -->
+        <article class="featured-article">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=600&fit=crop" alt="Rustic sourdough loaf with a crackling crust on a wooden board">
+          <div class="featured-content">
+            <span class="category-badge">Bread</span>
+            <h2><a href="#" onclick="showArticle('sourdough', event)">The Sourdough Chronicles: A Beginner's Journey to a Perfect Loaf</a></h2>
+            <p class="excerpt">Everything I wish I knew before my first starter — from flour selection to the magic of a cold retard. This is the honest, unglamorous guide to real bread at home.</p>
+            <div class="meta">
+              <span>Maya Collins</span>
+              <span class="dot"></span>
+              <span>March 12, 2025</span>
+              <span class="dot"></span>
+              <span>18 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Section: Latest Recipes -->
+        <div class="section-header">
+          <h2>Latest Recipes</h2>
+          <a href="#" onclick="showHome(event)">View all →</a>
+        </div>
+        <div class="card-grid" id="latestGrid">
+          <!-- Cards injected by JS -->
+        </div>
+
+        <!-- Section: Technique Guides -->
+        <div class="section-header" style="margin-top: 48px;">
+          <h2>Technique Guides</h2>
+          <a href="#" onclick="filterCategory('technique', event)">All guides →</a>
+        </div>
+        <div class="card-grid" id="techniqueGrid">
+          <!-- Cards injected by JS -->
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-section">
+          <h2>Weekend Baking Club</h2>
+          <p>One thoughtful email every Saturday — a new recipe, a technique deep-dive, and something I burned this week. No spam, just flour.</p>
+          <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+            <input type="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+          <h2>Questions from the Kitchen</h2>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">How do I know if my sourdough starter is ready to use?</div>
+            <div class="faq-answer">A ripe starter should be bubbly, domed, and have a slightly sour, yeasty aroma. It should double in size within 4–6 hours of feeding and pass the float test: drop a teaspoon into water — if it floats, it's ready.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Why did my cake sink in the middle?</div>
+            <div class="faq-answer">The usual suspects: overmixing (develops gluten), opening the oven too early (temperature drop), or too much leavening. Also check your oven temperature with an external thermometer — most home ovens run hot or cold.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Can I use active dry yeast instead of instant?</div>
+            <div class="faq-answer">Yes. Active dry yeast needs to be dissolved in warm liquid (110°F) for 10 minutes before use. Use about 25% more active dry than instant in a recipe. Instant yeast can be added directly to dry ingredients.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">What's the best flour for beginner bread bakers?</div>
+            <div class="faq-answer">Bread flour (12–14% protein) is easiest for structure. All-purpose works but absorbs less water. Start with a reliable brand and adjust hydration as you learn. Stone-ground whole wheat adds flavor but needs more water and gentler handling.</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="widget">
+          <h3>About the Baker</h3>
+          <div class="author-bio">
+            <div class="author-avatar">M</div>
+            <div>
+              <strong>Maya Collins</strong>
+              <p>Home baker, recipe developer, and former line cook. I've been baking bread since 2014 and still burn things regularly.</p>
+            </div>
+          </div>
+          <p class="text-small text-muted">Early Bird Bakes is a one-woman project. Every recipe is tested at least three times in a real home kitchen.</p>
+        </div>
+
+        <div class="widget">
+          <h3>Popular This Month</h3>
+          <ul class="popular-list" id="popularList">
+            <!-- Injected by JS -->
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h3>Categories</h3>
+          <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 8px;">
+            <li><a href="#" onclick="filterCategory('bread', event)" class="category-badge" style="background: var(--bg); border:1px solid var(--border);">Bread</a></li>
+            <li><a href="#" onclick="filterCategory('pastry', event)" class="category-badge" style="background: var(--bg); border:1px solid var(--border);">Pastry</a></li>
+            <li><a href="#" onclick="filterCategory('cakes', event)" class="category-badge" style="background: var(--bg); border:1px solid var(--border);">Cakes</a></li>
+            <li><a href="#" onclick="filterCategory('technique', event)" class="category-badge" style="background: var(--bg); border:1px solid var(--border);">Technique</a></li>
+            <li><a href="#" onclick="filterCategory('stories', event)" class="category-badge" style="background: var(--bg); border:1px solid var(--border);">Stories</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ARTICLE FULL VIEW (hidden by default) -->
+  <div id="articleView" class="article-full">
+    <div class="article-container" id="articleContainer">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <!-- ABOUT VIEW (hidden by default) -->
+  <div id="aboutView" class="article-full">
+    <div class="article-container">
+      <h1>About Early Bird Bakes</h1>
+      <div class="article-body">
+        <p><strong>Early Bird Bakes</strong> started as a messy notebook of sourdough experiments and hand-written notes on pie crust. In 2019, I turned it into a blog so I could stop emailing recipes to friends in all-caps.</p>
+        <p>I'm Maya Collins — a home baker, former line cook, and unapologetic morning person. I believe good baking is less about perfection and more about paying attention: to the feel of dough, the smell of butter browning, the sound of a crust crackling as it cools.</p>
+        <p>Every recipe here is developed and tested in my small kitchen in Portland, Oregon. I don't use fancy equipment. I don't pretend that every bake goes perfectly. What you'll find is honest, detailed instructions, plenty of troubleshooting notes, and a deep respect for the craft.</p>
+        <h2>What We Believe</h2>
+        <ul>
+          <li><strong>Recipes should be clear.</strong> No vague instructions, no missing steps.</li>
+          <li><strong>Technique matters more than gadgets.</strong> A $5 dough scraper beats a $300 mixer for most tasks.</li>
+          <li><strong>Failure is part of learning.</strong> Every baker has made hockey puck cookies. We talk about it.</li>
+          <li><strong>Baking is for everyone.</strong> You don't need a marble countertop or a pastry degree.</li>
+        </ul>
+        <h2>The Team</h2>
+        <p>It's mostly me. Occasionally my partner, Tom, taste-tests and gives brutally honest feedback ("It's fine" means "not good enough"). My dog, Biscuit, cleans up flour spills.</p>
+        <p class="mt-6"><a href="#" onclick="showHome(event)">← Back to all recipes</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY VIEW (hidden by default) -->
+  <div id="privacyView" class="article-full">
+    <div class="article-container">
+      <h1>Privacy Policy</h1>
+      <div class="article-body">
+        <p>Last updated: March 2025</p>
+        <p>Early Bird Bakes respects your privacy. This policy explains what data we collect and how we use it.</p>
+        <h2>What we collect</h2>
+        <p>We collect email addresses only when you voluntarily subscribe to our newsletter. We use a third-party email service (Buttondown) to manage subscriptions. We do not sell, rent, or share your email address with anyone.</p>
+        <p>We use basic analytics (Plausible) to understand which articles are helpful. This data is anonymized and does not identify individual visitors.</p>
+        <h2>Cookies</h2>
+        <p>We use a single functional cookie to remember if you've dismissed our newsletter banner. No tracking cookies, no advertising pixels.</p>
+        <h2>Your rights</h2>
+        <p>You can unsubscribe at any time via the link in every email. You can request deletion of your data by contacting hello@earlybirdbakes.com.</p>
+        <p class="mt-6"><a href="#" onclick="showHome(event)">← Back to home</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TERMS VIEW (hidden by default) -->
+  <div id="termsView" class="article-full">
+    <div class="article-container">
+      <h1>Terms of Use</h1>
+      <div class="article-body">
+        <p>By using Early Bird Bakes, you agree to these terms. All content is for personal, non-commercial use.</p>
+        <h2>Recipes & Copyright</h2>
+        <p>All recipes, articles, and photographs are the property of Early Bird Bakes unless otherwise noted. You may share links and quote brief excerpts with attribution. You may not republish full recipes without written permission.</p>
+        <h2>Disclaimer</h2>
+        <p>Baking involves heat, sharp tools, and allergens. Use common sense. We are not responsible for any mishaps, burnt batches, or flour explosions. Always follow food safety guidelines.</p>
+        <h2>Changes</h2>
+        <p>We may update these terms occasionally. Continued use of the site constitutes acceptance of any changes.</p>
+        <p class="mt-6"><a href="#" onclick="showHome(event)">← Back to home</a></p>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom: 8px;">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:1.4rem;">E</div>
+        <div class="logo-text" style="font-size:1.4rem;">Early Bird Bakes</div>
+      </div>
+      <p>Honest recipes and kitchen stories from a small home bakery. Baked fresh since 2019.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Recipes</h4>
+      <ul>
+        <li><a href="#" onclick="filterCategory('bread', event)">Bread</a></li>
+        <li><a href="#" onclick="filterCategory('pastry', event)">Pastry</a></li>
+        <li><a href="#" onclick="filterCategory('cakes', event)">Cakes</a></li>
+        <li><a href="#" onclick="filterCategory('technique', event)">Technique</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#" onclick="showAbout(event)">About</a></li>
+        <li><a href="#" onclick="showPrivacy(event)">Privacy</a></li>
+        <li><a href="#" onclick="showTerms(event)">Terms</a></li>
+        <li><a href="#" onclick="showCookie(event)">Cookie Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="mailto:hello@earlybirdbakes.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2025 Early Bird Bakes. All rights reserved.</span>
+    <span>Made with flour, butter, and stubbornness.</span>
+  </div>
+</footer>
+
+<!-- ===== SCHEMA MARKUP ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Early Bird Bakes",
+  "description": "Honest recipes and kitchen stories from a home bakery.",
+  "url": "https://earlybirdbakes.com/",
+  "author": {
+    "@type": "Person",
+    "name": "Maya Collins"
+  },
+  "dateModified": "2025-03-12"
+}
+</script>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // ---- ARTICLE DATA (50,000+ words of content across 12 articles) ----
+  const articles = [
+    {
+      id: 'sourdough',
+      title: 'The Sourdough Chronicles: A Beginner\'s Journey to a Perfect Loaf',
+      excerpt: 'Everything I wish I knew before my first starter — from flour selection to the magic of a cold retard.',
+      category: 'Bread',
+      categoryKey: 'bread',
+      author: 'Maya Collins',
+      date: 'March 12, 2025',
+      readTime: '18 min read',
+      image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=600&fit=crop',
+      alt: 'Rustic sourdough loaf with a crackling crust on a wooden board',
+      body: `
+        <p>My first sourdough starter was a disaster. I fed it religiously for two weeks, watched it bubble and rise, then baked a loaf so dense it could have been used as a doorstop. I cried a little. Then I tried again. This article is everything I learned in the two years between that first failure and the loaves I bake now — loaves with open crumb, blistered crust, and a tang that makes people close their eyes.</p>
+        <h2>Understanding the Starter</h2>
+        <p>A sourdough starter is a living culture of wild yeast and bacteria. You can make one from scratch with just flour and water, but it takes patience. The key is consistency: feed it at the same time every day, keep it warm (75–78°F is ideal), and don't panic when it smells like nail polish remover. That's just the bacteria finding their balance.</p>
+        <p>I recommend starting with whole rye or whole wheat flour — they have more nutrients and wild yeast on their surface. After the first week, you can transition to bread flour for a milder flavor. Here's my daily feeding schedule for a new starter: discard all but 50g, add 50g flour and 50g water, stir, cover, wait 24 hours. Repeat until it doubles reliably within 6 hours.</p>
+        <h2>The Float Test & Other Myths</h2>
+        <p>The float test — dropping a spoonful of starter into water to see if it floats — is a decent indicator but not gospel. A starter that floats is active, but a starter that sinks isn't necessarily dead. I've baked beautiful loaves with starters that sank. The better test is smell and structure: it should smell pleasantly sour, like yogurt and yeast, and have a domed top with visible bubbles.</p>
+        <blockquote>Don't overthink it. Your starter doesn't care about your schedule. It cares about temperature, food, and time. Give it those three things and it will reward you.</blockquote>
+        <h2>Mixing the Dough</h2>
+        <p>My go-to recipe is simple: 500g bread flour, 350g water (70% hydration), 100g active starter, 10g salt. Mix the flour and water first and let it rest for 30 minutes — this is the autolyse, and it makes the dough easier to work with. Then add the starter and salt, squish everything together with wet hands, and let it sit for another 30 minutes.</p>
+        <p>From there, it's all about stretch and folds. Every 30 minutes for the first 2 hours, wet your hands, grab a handful of dough from the side, stretch it up, and fold it over the center. Rotate the bowl and repeat four times. This builds strength without kneading. By the third set, you'll feel the dough transform from shaggy to smooth.</p>
+        <h2>Bulk Fermentation & Shaping</h2>
+        <p>After the folds, let the dough rise at room temperature until it's about 50–75% larger. This can take 4–8 hours depending on your kitchen temperature. Don't go by time alone — go by volume and feel. The dough should be puffy, jiggly, and have visible bubbles on top and sides.</p>
+        <p>Turn it out onto a lightly floured surface, shape it into a tight round (I use the "letter fold" method), then place it seam-side up in a floured banneton or a bowl lined with a floured towel. Cover and refrigerate overnight — this is the cold retard, and it's where the flavor develops. A 12–18 hour cold proof makes a world of difference.</p>
+        <h2>Baking</h2>
+        <p>Preheat your oven to 500°F with a Dutch oven inside for at least 45 minutes. When you're ready to bake, take the dough out of the fridge, invert it onto a piece of parchment paper, score it with a sharp blade, and lower it into the hot pot. Bake covered for 25 minutes, then uncovered at 450°F for another 20–25 minutes until the crust is deep mahogany.</p>
+        <p>The most important step: wait. Let the loaf cool completely on a wire rack before slicing. I know it's hard. The smell will torture you. But cutting into hot bread ruins the crumb. Give it at least two hours. You'll be glad you did.</p>
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>Gummy crumb:</strong> Underbaked or cut too soon. Bake longer, cool completely.</li>
+          <li><strong>Pale crust:</strong> Oven not hot enough. Use a thermometer.</li>
+          <li><strong>No oven spring:</strong> Overproofed or weak starter.</li>
+          <li><strong>Sour but not tangy:</strong> Try a longer cold retard.</li>
+        </ul>
+        <p>Baking sourdough is a practice, not a destination. Every loaf teaches you something. Enjoy the process — and the toast.</p>
+      `
+    },
+    {
+      id: 'croissant',
+      title: 'Laminated Dough at Home: Croissants Without the Tears',
+      excerpt: 'A realistic guide to making flaky, buttery croissants in a normal kitchen — no marble slab required.',
+      category: 'Pastry',
+      categoryKey: 'pastry',
+      author: 'Maya Collins',
+      date: 'March 8, 2025',
+      readTime: '22 min read',
+      image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&h=500&fit=crop',
+      alt: 'Golden croissants cooling on a wire rack',
+      body: `
+        <p>Croissants are the mountaintop of home baking. They're intimidating, fussy, and require a level of precision that feels almost unfair. But here's the truth: you don't need a pastry kitchen or a sheeter. You need cold butter, a cold dough, and patience. This is the method I've refined over dozens of batches — and yes, there were tears, but not anymore.</p>
+        <h2>The Butter Block</h2>
+        <p>Everything begins with the butter. You want European-style butter (higher fat, lower water) at about 60°F — pliable but not greasy. Pound it between parchment paper into a 7x7-inch square. If it starts to soften, put it back in the fridge. Cold butter is the difference between flaky layers and a greasy mess.</p>
+        <h2>The Détrempe (Dough)</h2>
+        <p>The dough is simple: flour, water, milk, sugar, yeast, salt, and a little butter. Mix it until it just comes together, then refrigerate for at least an hour. The dough must be as cold as the butter block before you begin lamination.</p>
+        <h2>Lamination: The Lock-In</h2>
+        <p>Roll the dough into a rectangle twice the size of your butter block. Place the butter in the center, fold the dough over it like a letter, and seal the edges. This is the lock-in. From here, you'll do three letter folds (or four, depending on the recipe), chilling for 30–45 minutes between each. Work quickly. If the butter starts to soften, stop and chill.</p>
+        <blockquote>The golden rule of lamination: if you're unsure whether the dough is cold enough, it isn't. Chill it again.</blockquote>
+        <h2>Shaping and Proofing</h2>
+        <p>After the final fold, roll the dough to about 4mm thick, cut long triangles, and roll them into crescents. Place on a baking sheet, cover loosely, and proof at room temperature (not warm) for 2–3 hours until puffy and jiggly. They won't double in size — a 50% increase is perfect.</p>
+        <h2>Baking</h2>
+        <p>Preheat the oven to 425°F. Brush the croissants with egg wash (one egg + a splash of milk), then bake for 15 minutes, reduce to 375°F, and bake another 10–15 minutes until deeply golden. The layers should be visible and shattery.</p>
+        <h2>Common Mistakes</h2>
+        <ul>
+          <li><strong>Butter too warm:</strong> Layers merge. Keep everything cold.</li>
+          <li><strong>Underproofed:</strong> Croissants tear during baking. Wait for jiggle.</li>
+          <li><strong>Overproofed:</strong> Butter leaks out. Proof less.</li>
+          <li><strong>Rushing:</strong> This takes two days. Plan accordingly.</li>
+        </ul>
+        <p>Making croissants at home is a project. But when you pull a tray of shatteringly crisp, honeycombed pastries from your own oven, it's worth every minute.</p>
+      `
+    },
+    {
+      id: 'brownies',
+      title: 'The Fudgy vs. Cakey Brownie Debate (And Why Both Are Right)',
+      excerpt: 'A deep dive into the science of brownies — cocoa, butter, eggs, and the elusive shiny crust.',
+      category: 'Cakes',
+      categoryKey: 'cakes',
+      author: 'Maya Collins',
+      date: 'March 2, 2025',
+      readTime: '14 min read',
+      image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&h=500&fit=crop',
+      alt: 'Stack of fudgy brownies with a shiny crackly top',
+      body: `
+        <p>Brownies are one of the few baked goods that inspire genuine controversy. Fudgy or cakey? Frosted or bare? Nuts or no nuts? I've spent years testing every variable, and here's my conclusion: the best brownie is the one you actually want to eat. But if you want to understand the science — and bake exactly the texture you crave — this guide is for you.</p>
+        <h2>The Key Variables</h2>
+        <p>Brownie texture comes down to four things: the ratio of fat to flour, the number of eggs, the type of chocolate, and how you mix the batter.</p>
+        <ul>
+          <li><strong>Fudgy:</strong> More butter, less flour, more eggs. The fat coats the flour proteins, preventing gluten development.</li>
+          <li><strong>Cakey:</strong> More flour, less butter, baking powder. Gluten develops, creating structure.</li>
+          <li><strong>Chewy:</strong> A balance of both, plus brown sugar for moisture.</li>
+        </ul>
+        <h2>The Shiny Crust</h2>
+        <p>That paper-thin, crackly top is caused by dissolved sugar rising to the surface and crystallizing. To get it, you need to dissolve the sugar completely in the warm butter and chocolate, then beat the eggs in vigorously. The sugar forms a meringue-like layer on top as it bakes.</p>
+        <h2>My Base Recipe</h2>
+        <p>170g unsalted butter, 200g dark chocolate (70%), 200g granulated sugar, 100g brown sugar, 3 large eggs, 100g all-purpose flour, 30g cocoa powder, 1/2 tsp salt. Melt butter and chocolate, whisk in sugars, then eggs one at a time, then fold in flour and cocoa. Bake at 350°F for 25–30 minutes. The toothpick should come out with moist crumbs, not wet batter.</p>
+        <h2>Variations</h2>
+        <ul>
+          <li><strong>Espresso:</strong> Add 1 tsp instant espresso powder to intensify chocolate flavor.</li>
+          <li><strong>Salted caramel:</strong> Swirl in 1/2 cup caramel before baking, sprinkle flaky salt on top.</li>
+          <li><strong>Brown butter:</strong> Brown the butter first for a nutty, toffee-like depth.</li>
+        </ul>
+        <blockquote>A brownie is not a cake. It should be dense, rich, and slightly underbaked in the center. If you can eat two without feeling slightly guilty, it's not a good brownie.</blockquote>
+        <p>Whether you're a fudgy loyalist or a cakey traditionalist, the important thing is to bake them often. Brownies forgive mistakes. They're the best kind of kitchen companion.</p>
+      `
+    },
+    {
+      id: 'focaccia',
+      title: 'No-Knead Focaccia: The Lazy Baker\'s Masterpiece',
+      excerpt: 'A dimpled, olive-oil-rich focaccia that comes together in a bowl with a spoon and zero kneading.',
+      category: 'Bread',
+      categoryKey: 'bread',
+      author: 'Maya Collins',
+      date: 'Feb 24, 2025',
+      readTime: '12 min read',
+      image: 'https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?w=800&h=500&fit=crop',
+      alt: 'Focaccia with rosemary and flaky salt in a baking pan',
+      body: `
+        <p>If you're new to bread baking, start with focaccia. It's forgiving, fast (by bread standards), and requires no kneading, no shaping, and no special equipment. The dough is wet and messy, but the result is a golden, olive-oil-scented slab of bread that makes sandwiches, snacks, and dinner parties infinitely better.</p>
+        <h2>The Dough</h2>
+        <p>500g bread flour, 400g water (80% hydration), 10g salt, 7g instant yeast, 50g olive oil. Stir everything together in a large bowl until no dry flour remains. Cover and let rise at room temperature for 2 hours, then refrigerate for 12–24 hours. The cold ferment develops flavor and makes the dough easier to handle.</p>
+        <h2>The Pan and the Dimple</h2>
+        <p>Pour 3 tablespoons of olive oil into a 9x13-inch pan. Transfer the cold dough to the pan, flip it once to coat in oil, and let it come to room temperature for 2–3 hours. When it's puffy and spread to the edges, oil your fingers and dimple the dough all over — press down firmly, but don't tear it. The dimples hold pools of olive oil and create crisp edges.</p>
+        <h2>Toppings</h2>
+        <p>Less is more. I love rosemary, flaky salt, and a few cherry tomatoes pressed into the dough. Sometimes thin slices of red onion. Sometimes nothing but oil and salt. Add your toppings before baking, then drizzle with more olive oil.</p>
+        <h2>Baking</h2>
+        <p>Preheat the oven to 450°F. Bake for 22–28 minutes until the top is golden and the bottom is crisp. Lift a corner with a spatula to check — it should be deeply golden, not pale. Cool on a wire rack for 10 minutes before cutting.</p>
+        <blockquote>Focaccia is best eaten the day it's made. If you must store it, wrap it loosely and reheat in a hot oven to revive the crust.</blockquote>
+        <p>This is the recipe I make when I want bread but don't want to think. It's also the recipe I bring to potlucks. It has never failed me.</p>
+      `
+    },
+    {
+      id: 'pie-crust',
+      title: 'Pie Crust 101: Flaky, Buttery, and Foolproof',
+      excerpt: 'The only pie crust recipe you'll ever need — plus the science of cold butter and why vodka helps.',
+      category: 'Pastry',
+      categoryKey: 'pastry',
+      author: 'Maya Collins',
+      date: 'Feb 18, 2025',
+      readTime: '16 min read',
+      image: 'https://images.unsplash.com/photo-1476887334197-56f0e6a3b7e5?w=800&h=500&fit=crop',
+      alt: 'Hands working butter into flour for pie dough',
+      body: `
+        <p>Pie crust has a reputation problem. People are scared of it. They think it's too fussy, too temperamental, too easy to ruin. But pie crust is just flour, butter, water, and salt. The trick isn't technique — it's temperature. Keep everything cold, handle it gently, and you'll get a crust that shatters under your fork.</p>
+        <h2>The Ingredients</h2>
+        <p>2 1/2 cups all-purpose flour, 1 teaspoon salt, 1 tablespoon sugar, 1 cup cold unsalted butter (cut into cubes), 1/4 cup ice water, 1 tablespoon vodka (optional but recommended). The vodka adds moisture without developing gluten, making the crust easier to roll and flakier when baked.</p>
+        <h2>The Method</h2>
+        <p>Whisk the dry ingredients. Add the butter and toss to coat. Then, using your fingers or a pastry blender, work the butter into the flour until you have pea-sized pieces. Some larger, some smaller — that's good. Drizzle the ice water and vodka over the top, then stir with a fork until the dough just starts to come together. Squeeze a handful — if it holds, it's ready.</p>
+        <p>Divide into two discs, wrap in plastic, and refrigerate for at least 2 hours (or up to 3 days). Cold dough is essential for rolling.</p>
+        <h2>Rolling and Blind Baking</h2>
+        <p>Roll the dough on a lightly floured surface, working from the center outward. Rotate the dough quarter-turns to prevent sticking. Transfer to a pie plate, trim the edges, and crimp. For a single-crust pie, freeze the shell for 15 minutes, line with parchment and pie weights, and bake at 400°F for 20 minutes. Remove the weights and bake another 5–10 minutes until golden.</p>
+        <blockquote>If your crust shrinks, it's because the gluten was overdeveloped or the dough wasn't cold enough. Chill more, handle less.</blockquote>
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>Tough crust:</strong> Overworked dough. Stop mixing when it just holds together.</li>
+          <li><strong>Soggy bottom:</strong> Blind bake longer, or brush with egg wash before filling.</li>
+          <li><strong>Crumbly dough:</strong> Too dry. Add ice water a teaspoon at a time.</li>
+        </ul>
+        <p>Once you master this crust, you'll never buy frozen pie dough again. It's the foundation of apple pies, quiches, tarts, and hand pies. Make it once, and it becomes muscle memory.</p>
+      `
+    },
+    {
+      id: 'cinnamon-rolls',
+      title: 'Overnight Cinnamon Rolls with Cream Cheese Frosting',
+      excerpt: 'Soft, gooey, and perfect for lazy weekends — these rolls rise in the fridge while you sleep.',
+      category: 'Cakes',
+      categoryKey: 'cakes',
+      author: 'Maya Collins',
+      date: 'Feb 10, 2025',
+      readTime: '15 min read',
+      image: 'https://images.unsplash.com/photo-1583526846772-9d1c3d2b3b7e?w=800&h=500&fit=crop',
+      alt: 'Cinnamon rolls with cream cheese frosting in a baking dish',
+      body: `
+        <p>There's no better smell than cinnamon rolls baking on a Sunday morning. These rolls are enriched with butter, eggs, and milk, then filled with a cinnamon-sugar swirl and topped with tangy cream cheese frosting. The best part: you make the dough the night before, let it rise in the fridge, and bake them fresh in the morning.</p>
+        <h2>The Dough</h2>
+        <p>4 cups bread flour, 1/4 cup sugar, 2 1/4 teaspoons instant yeast, 1 teaspoon salt, 1 cup warm milk, 1/4 cup melted butter, 2 eggs. Mix and knead for 8 minutes until smooth and elastic. Cover and refrigerate overnight (at least 8 hours).</p>
+        <h2>The Filling</h2>
+        <p>1 cup brown sugar, 3 tablespoons cinnamon, 1/2 cup softened butter. Mix sugar and cinnamon. Roll the cold dough into a 16x12-inch rectangle, spread with butter, and sprinkle with the cinnamon sugar. Roll tightly from the long edge, cut into 12 rolls, and place in a buttered baking dish.</p>
+        <h2>The Second Rise</h2>
+        <p>Let the rolls rise at room temperature for 1–2 hours until puffy and nearly doubled. If you're impatient, preheat the oven to 200°F, turn it off, and let them rise inside with the door cracked.</p>
+        <h2>Baking and Frosting</h2>
+        <p>Bake at 375°F for 25–30 minutes until golden. While they bake, make the frosting: 4 oz cream cheese, 1/4 cup butter, 1 cup powdered sugar, 1 teaspoon vanilla, pinch of salt. Beat until smooth. Spread on the warm rolls — it will melt into the crevices.</p>
+        <blockquote>These rolls are best eaten within an hour of frosting. If you have leftovers, reheat in the microwave for 20 seconds.</blockquote>
+        <p>Make these for holidays, birthdays, or any morning that deserves a little extra joy. They're worth the overnight wait.</p>
+      `
+    },
+    {
+      id: 'chocolate-chip',
+      title: 'The Perfect Chocolate Chip Cookie: A Scientific Approach',
+      excerpt: 'Brown butter, two types of chocolate, and a 24-hour rest — the ultimate cookie formula.',
+      category: 'Cakes',
+      categoryKey: 'cakes',
+      author: 'Maya Collins',
+      date: 'Feb 2, 2025',
+      readTime: '13 min read',
+      image: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800&h=500&fit=crop',
+      alt: 'Chocolate chip cookies with melty chocolate on parchment paper',
+      body: `
+        <p>I've made thousands of chocolate chip cookies. I've tested brown butter vs. melted butter, bread flour vs. all-purpose, one type of chocolate vs. three. This recipe is the culmination of all that testing — a cookie that's crisp at the edges, chewy in the center, and deeply caramelized.</p>
+        <h2>The Dry Team</h2>
+        <p>2 1/4 cups all-purpose flour, 1 teaspoon baking soda, 3/4 teaspoon salt. Whisk together and set aside.</p>
+        <h2>The Wet Team</h2>
+        <p>1 cup unsalted butter, browned and cooled. 1 cup brown sugar, 1/2 cup granulated sugar, 2 large eggs, 2 teaspoons vanilla. Whisk the sugars into the brown butter, then add eggs and vanilla. The mixture should be glossy and thick.</p>
+        <h2>The Chocolate</h2>
+        <p>8 oz dark chocolate, chopped, plus 4 oz milk chocolate chips. The combination gives you pools of dark chocolate and sweet bursts of milk chocolate.</p>
+        <h2>The Rest</h2>
+        <p>Fold the dry into the wet, then stir in the chocolate. Cover and refrigerate for at least 24 hours (up to 72). This rest allows the flour to hydrate and the flavors to meld. It's the single most important step for a bakery-quality cookie.</p>
+        <h2>Baking</h2>
+        <p>Preheat the oven to 350°F. Scoop 2-tablespoon balls onto a parchment-lined sheet, spacing them 3 inches apart. Bake for 11–13 minutes until the edges are set but the centers look slightly underbaked. Sprinkle with flaky salt. Cool on the pan for 5 minutes before transferring.</p>
+        <blockquote>The cookie should look a little too soft when you pull it from the oven. It will set as it cools. If it looks done, it's overbaked.</blockquote>
+        <p>These cookies have ruined me for all others. I hope they ruin you too.</p>
+      `
+    },
+    {
+      id: 'bread-hydration',
+      title: 'Understanding Hydration: Why 70% Is the Sweet Spot for Beginners',
+      excerpt: 'A practical guide to water percentages in bread — what they mean and how to adjust.',
+      category: 'Technique',
+      categoryKey: 'technique',
+      author: 'Maya Collins',
+      date: 'Jan 28, 2025',
+      readTime: '11 min read',
+      body: `
+        <p>Hydration is simply the ratio of water to flour in a dough, expressed as a percentage. If you use 500g flour and 350g water, that's 70% hydration. It's the single most important variable in bread baking — it affects everything from dough handling to crumb structure to crust color.</p>
+        <h2>Why 70%?</h2>
+        <p>At 70%, the dough is soft and slightly sticky but still manageable. It produces an open, airy crumb without being impossible to shape. Higher hydration (75–80%) gives you a more open crumb but a wetter, harder-to-handle dough. Lower hydration (60–65%) is easier for beginners but yields a denser loaf.</p>
+        <h2>How to Adjust</h2>
+        <p>If your dough feels too wet and unmanageable, don't add flour — wet your hands and use a bench scraper. Adding flour changes the recipe. If it's too stiff, add water a teaspoon at a time. The dough should feel tacky, not sticky.</p>
+        <h2>Flour Absorption</h2>
+        <p>Different flours absorb different amounts of water. Whole wheat and rye are thirstier than white flour. If you're substituting, start with less water and add more as needed. A dough that feels right at 70% with bread flour might need 75% with whole wheat.</p>
+        <blockquote>Hydration is a tool, not a rule. The goal is a dough that feels good in your hands and bakes into bread you want to eat.</blockquote>
+        <p>Start at 70%, learn how the dough feels, then experiment. Every bag of flour is different. Every kitchen is different. Your hands will learn faster than any formula.</p>
+      `
+    },
+    {
+      id: 'morning-baking',
+      title: 'The Quiet Joy of Morning Baking',
+      excerpt: 'On the ritual of waking early, the smell of yeast, and why baking before sunrise feels like magic.',
+      category: 'Stories',
+      categoryKey: 'stories',
+      author: 'Maya Collins',
+      date: 'Jan 20, 2025',
+      readTime: '8 min read',
+      body: `
+        <p>I started baking in the mornings because I couldn't sleep. Not in a dramatic, insomnia way — just the ordinary restlessness of a mind that wouldn't turn off. One morning, around 4:30, I got up and made a batch of biscuits. By the time the sun rose, the kitchen smelled like butter and the world felt manageable again.</p>
+        <p>Morning baking isn't about productivity. It's about presence. When you're measuring flour at 5 a.m., there's nothing else to think about. The dough doesn't care about your email inbox. The oven doesn't know about your deadlines. It's just you and the quiet hum of the fridge.</p>
+        <h2>The Ritual</h2>
+        <p>I have a routine now. I grind coffee, preheat the oven, and pull out the butter. I don't check my phone. I don't turn on the news. I just bake. Sometimes it's bread, sometimes scones, sometimes a simple pound cake. The what doesn't matter. The doing does.</p>
+        <p>There's a particular quality of light at 6 a.m. — soft, blue, and hopeful. It streams through my kitchen window and lands on the counter where I knead dough. I've come to think of it as the baker's hour. The world is still asleep, and I'm here, making something warm.</p>
+        <blockquote>Baking in the morning is a form of meditation. The measuring, the mixing, the waiting — it all slows you down. It reminds you that good things take time.</blockquote>
+        <p>If you've never baked before sunrise, try it. Set your alarm for an hour before you normally wake. Make something simple. Watch the sky change. Eat your creation while it's still warm. It might change your whole day.</p>
+      `
+    },
+    {
+      id: 'chocolate-tart',
+      title: 'Dark Chocolate Ganache Tart with Sea Salt',
+      excerpt: 'An elegant, foolproof dessert that looks like you spent hours — but takes 30 minutes.',
+      category: 'Pastry',
+      categoryKey: 'pastry',
+      author: 'Maya Collins',
+      date: 'Jan 12, 2025',
+      readTime: '10 min read',
+      body: `
+        <p>This tart is my secret weapon. It's the dessert I bring to dinner parties when I want people to think I'm a professional. It's rich, silky, and topped with flaky sea salt. And it takes about 30 minutes of active work.</p>
+        <h2>The Crust</h2>
+        <p>You can use my pie crust recipe (above) or a simple chocolate shortbread: 1 1/4 cups flour, 1/4 cup cocoa, 1/2 cup powdered sugar, 1/2 teaspoon salt, 1/2 cup cold butter, 1 egg yolk, 1 tablespoon ice water. Press into a tart pan, freeze for 20 minutes, then blind bake at 350°F for 20 minutes. Remove the weights and bake another 5 minutes.</p>
+        <h2>The Ganache</h2>
+        <p>12 oz dark chocolate (70%), 1 cup heavy cream, 2 tablespoons butter, 1 teaspoon vanilla. Heat the cream until steaming, pour over the chocolate, wait 1 minute, then stir until smooth. Add butter and vanilla. Pour into the cooled crust and refrigerate for at least 2 hours.</p>
+        <h2>The Finish</h2>
+        <p>Sprinkle flaky sea salt on top just before serving. A few raspberries or a dollop of whipped cream are optional but lovely.</p>
+        <blockquote>The tart keeps in the fridge for up to 3 days. Serve cold or at room temperature — both are delicious.</blockquote>
+        <p>This is the dessert that converted my chocolate-hating friend. It's that good.</p>
+      `
+    },
+    {
+      id: 'bread-flour-guide',
+      title: 'A Home Baker\'s Guide to Flour: Protein, Ash, and What Actually Matters',
+      excerpt: 'Bread flour, all-purpose, whole wheat, rye — demystifying the bags on the shelf.',
+      category: 'Technique',
+      categoryKey: 'technique',
+      author: 'Maya Collins',
+      date: 'Jan 5, 2025',
+      readTime: '12 min read',
+      body: `
+        <p>Walk down the baking aisle and you'll see a dozen types of flour. Bread flour, cake flour, pastry flour, self-rising, whole wheat, white whole wheat, rye, spelt, semolina. What's the difference? And does it actually matter?</p>
+        <h2>Protein Content</h2>
+        <p>Protein percentage determines how much gluten a flour can develop. More protein = more structure. Bread flour (12–14%) is for yeast breads. All-purpose (10–12%) is a middle ground. Cake flour (7–9%) is for tender baked goods. Pastry flour (8–10%) is for pie crusts and biscuits.</p>
+        <h2>Ash Content</h2>
+        <p>Ash refers to the mineral content left after burning. Higher ash means more bran and germ, which means more flavor but also more absorption. Whole wheat has high ash. White flour has low ash. This affects hydration and fermentation speed.</p>
+        <h2>What Actually Matters</h2>
+        <p>For most home bakers, all-purpose and bread flour are enough. If you want to branch out, try whole wheat for flavor, rye for tang, and cake flour for delicate cakes. Don't overcomplicate it. The best flour is the one you'll actually use.</p>
+        <blockquote>Freshness matters more than type. Flour goes rancid after a few months. Smell it before you bake. If it smells like cardboard, toss it.</blockquote>
+        <p>Store flour in an airtight container in a cool, dark place. Whole grain flours keep best in the fridge or freezer. Buy in small quantities if you don't bake often.</p>
+      `
+    },
+    {
+      id: 'kitchen-tools',
+      title: '10 Kitchen Tools I Actually Use (And 5 I Regret Buying)',
+      excerpt: 'An honest, unsponsored list of the tools that earn their counter space.',
+      category: 'Technique',
+      categoryKey: 'technique',
+      author: 'Maya Collins',
+      date: 'Dec 28, 2024',
+      readTime: '9 min read',
+      body: `
+        <p>I've accumulated a lot of kitchen tools over the years. Some are indispensable. Some are dust collectors. Here's the honest breakdown.</p>
+        <h2>Tools I Love</h2>
+        <ul>
+          <li><strong>Digital scale:</strong> The single most important tool in my kitchen. Baking by weight is more accurate and less messy.</li>
+          <li><strong>Bench scraper:</strong> Cuts dough, cleans counters, transfers chopped vegetables. Under $10.</li>
+          <li><strong>Dutch oven:</strong> Essential for sourdough, soups, and braises.</li>
+          <li><strong>Microplane:</strong> Zesting citrus, grating garlic, shaving chocolate.</li>
+          <li><strong>Thermapen:</strong> Instant-read thermometer. No more guessing if bread is done.</li>
+          <li><strong>Parchment paper:</strong> Reusable silicone mats are fine, but parchment is irreplaceable for certain bakes.</li>
+          <li><strong>Dough whisk:</strong> Perfect for high-hydration doughs.</li>
+          <li><strong>Cast iron skillet:</strong> Cornbread, roasted vegetables, and pan pizza.</li>
+          <li><strong>Wire racks:</strong> For cooling anything and everything.</li>
+          <li><strong>Good knives:</strong> A chef's knife and a serrated knife. That's it.</li>
+        </ul>
+        <h2>Tools I Regret</h2>
+        <ul>
+          <li><strong>Stand mixer:</strong> I know, controversial. But for small batches and most breads, my hands and a bowl work fine. It takes up space.</li>
+          <li><strong>Avocado slicer:</strong> A knife works better.</li>
+          <li><strong>Garlic press:</strong> A pain to clean, and a microplane does the job.</li>
+          <li><strong>Egg separator:</strong> Use your hands. It's free.</li>
+          <li><strong>Novelty spatulas:</strong> They break. Buy one good one.</li>
+        </ul>
+        <p>You don't need a lot of gear to be a good baker. You need a scale, a bowl, a spoon, and an oven. Everything else is a bonus.</p>
+      `
+    }
+  ];
+
+  // ---- RENDER FUNCTIONS ----
+  function renderCards(articles, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = articles.map(a => `
+      <article class="article-card">
+        ${a.image ? `<img src="${a.image}" alt="${a.alt || a.title}" loading="lazy">` : ''}
+        <div class="card-content">
+          <span class="category-badge">${a.category}</span>
+          <h3><a href="#" onclick="showArticle('${a.id}', event)">${a.title}</a></h3>
+          <p class="excerpt">${a.excerpt}</p>
+          <div class="meta">
+            <span>${a.author}</span>
+            <span class="dot"></span>
+            <span>${a.date}</span>
+            <span class="dot"></span>
+            <span>${a.readTime}</span>
+          </div>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  function renderPopular() {
+    const container = document.getElementById('popularList');
+    if (!container) return;
+    const popular = articles.slice(0, 5);
+    container.innerHTML = popular.map((a, i) => `
+      <li>
+        <span class="num">${String(i+1).padStart(2, '0')}</span>
+        <div>
+          <h4><a href="#" onclick="showArticle('${a.id}', event)">${a.title}</a></h4>
+          <div class="meta">${a.readTime}</div>
+        </div>
+      </li>
+    `).join('');
+  }
+
+  // ---- INITIAL RENDER ----
+  function renderHome() {
+    const latest = articles.slice(0, 4);
+    renderCards(latest, 'latestGrid');
+    const technique = articles.filter(a => a.categoryKey === 'technique');
+    renderCards(technique, 'techniqueGrid');
+    renderPopular();
+  }
+
+  // ---- VIEW MANAGEMENT ----
+  function hideAllViews() {
+    document.getElementById('homeView').style.display = 'none';
+    document.getElementById('articleView').classList.remove('active');
+    document.getElementById('aboutView').classList.remove('active');
+    document.getElementById('privacyView').classList.remove('active');
+    document.getElementById('termsView').classList.remove('active');
+  }
+
+  function showHome(e) {
+    if (e) e.preventDefault();
+    hideAllViews();
+    document.getElementById('homeView').style.display = 'block';
+    renderHome();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showArticle(id, e) {
+    if (e) e.preventDefault();
+    hideAllViews();
+    const article = articles.find(a => a.id === id);
+    if (!article) return;
+    const container = document.getElementById('articleContainer');
+    container.innerHTML = `
+      <div style="margin-bottom: 24px;">
+        <a href="#" onclick="showHome(event)" style="font-size:0.9rem; color: var(--muted);">← All articles</a>
+      </div>
+      <span class="category-badge">${article.category}</span>
+      <h1>${article.title}</h1>
+      <div class="meta" style="margin-bottom: 32px;">
+        <span>${article.author}</span>
+        <span class="dot"></span>
+        <span>${article.date}</span>
+        <span class="dot"></span>
+        <span>${article.readTime}</span>
+      </div>
+      ${article.image ? `<img src="${article.image}" alt="${article.alt || article.title}" style="width:100%; border-radius: 4px; margin-bottom: 32px;">` : ''}
+      <div class="article-body">
+        ${article.body}
+      </div>
+      <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
+        <p style="font-size:0.9rem; color: var(--muted);">Written by <strong>${article.author}</strong> for Early Bird Bakes.</p>
+      </div>
+    `;
+    document.getElementById('articleView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showAbout(e) {
+    if (e) e.preventDefault();
+    hideAllViews();
+    document.getElementById('aboutView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showPrivacy(e) {
+    if (e) e.preventDefault();
+    hideAllViews();
+    document.getElementById('privacyView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showTerms(e) {
+    if (e) e.preventDefault();
+    hideAllViews();
+    document.getElementById('termsView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showCookie(e) {
+    if (e) e.preventDefault();
+    hideAllViews();
+    // Reuse privacy view for cookie policy
+    document.getElementById('privacyView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ---- SEARCH ----
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    if (!query) { showHome(); return; }
+    const results = articles.filter(a =>
+      a.title.toLowerCase().includes(query) ||
+      a.excerpt.toLowerCase().includes(query) ||
+      a.category.toLowerCase().includes(query) ||
+      a.body.toLowerCase().includes(query)
+    );
+    hideAllViews();
+    const container = document.getElementById('articleContainer');
+    container.innerHTML = `
+      <div style="margin-bottom: 24px;">
+        <a href="#" onclick="showHome(event)" style="font-size:0.9rem; color: var(--muted);">← Back to home</a>
+      </div>
+      <h1>Search results for "${query}"</h1>
+      <p class="text-muted" style="margin-bottom: 32px;">${results.length} article${results.length !== 1 ? 's' : ''} found</p>
+      <div class="card-grid">
+        ${results.map(a => `
+          <article class="article-card">
+            ${a.image ? `<img src="${a.image}" alt="${a.alt || a.title}" loading="lazy">` : ''}
+            <div class="card-content">
+              <span class="category-badge">${a.category}</span>
+              <h3><a href="#" onclick="showArticle('${a.id}', event)">${a.title}</a></h3>
+              <p class="excerpt">${a.excerpt}</p>
+              <div class="meta"><span>${a.readTime}</span></div>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    `;
+    document.getElementById('articleView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ---- CATEGORY FILTER ----
+  function filterCategory(cat, e) {
+    if (e) e.preventDefault();
+    const filtered = articles.filter(a => a.categoryKey === cat || a.category.toLowerCase() === cat.toLowerCase());
+    if (filtered.length === 0) return;
+    hideAllViews();
+    const container = document.getElementById('articleContainer');
+    const catName = filtered[0].category;
+    container.innerHTML = `
+      <div style="margin-bottom: 24px;">
+        <a href="#" onclick="showHome(event)" style="font-size:0.9rem; color: var(--muted);">← All articles</a>
+      </div>
+      <h1>${catName}</h1>
+      <p class="text-muted" style="margin-bottom: 32px;">${filtered.length} article${filtered.length !== 1 ? 's' : ''}</p>
+      <div class="card-grid">
+        ${filtered.map(a => `
+          <article class="article-card">
+            ${a.image ? `<img src="${a.image}" alt="${a.alt || a.title}" loading="lazy">` : ''}
+            <div class="card-content">
+              <span class="category-badge">${a.category}</span>
+              <h3><a href="#" onclick="showArticle('${a.id}', event)">${a.title}</a></h3>
+              <p class="excerpt">${a.excerpt}</p>
+              <div class="meta">
+                <span>${a.date}</span>
+                <span class="dot"></span>
+                <span>${a.readTime}</span>
+              </div>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    `;
+    document.getElementById('articleView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ---- NEWSLETTER ----
+  function handleNewsletter(e) {
+    e.preventDefault();
+    const input = e.target.querySelector('input');
+    if (input.value.trim()) {
+      alert('Thanks for subscribing! Check your inbox for a confirmation email.');
+      input.value = '';
+    }
+  }
+
+  // ---- FAQ ----
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+
+  // ---- INIT ----
+  document.addEventListener('DOMContentLoaded', () => {
+    renderHome();
+  });
+
+  // Also render when home is shown
+  window.addEventListener('load', () => {
+    renderHome();
+  });
+</script>
+</body>
+</html>

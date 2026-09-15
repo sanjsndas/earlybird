@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service · Early Bird Bakes</title>
+  <meta name="description" content="Terms of Service for Early Bird Bakes — the terms and conditions for using our website and content.">
+  <meta name="author" content="Maya Collins">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://earlybirdbakes.com/terms.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terms of Service · Early Bird Bakes">
+  <meta property="og:description" content="Terms and conditions for using the Early Bird Bakes website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earlybirdbakes.com/terms.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & basic styling (same as home) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---- RESET & VARIABLES (copy from home) ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fcf9f4;
+      --surface: #ffffff;
+      --border: #e7e0d8;
+      --text: #2c2722;
+      --muted: #6b625a;
+      --accent: #b45a3b;
+      --accent-soft: #f3e9e2;
+      --heading-font: 'DM Serif Display', Georgia, serif;
+      --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --article-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-hover: 0 8px 20px rgba(0,0,0,0.06);
+      --transition: 0.2s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.6;
+      font-size: 17px;
+      font-weight: 350;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.2rem; }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---- UTILITY ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .text-muted { color: var(--muted); }
+    .text-accent { color: var(--accent); }
+    .text-small { font-size: 0.875rem; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-4 { margin-top: 1rem; }
+    .mt-6 { margin-top: 2rem; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 2rem; }
+
+    /* ---- HEADER / NAV ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0 16px;
+      background-color: var(--surface);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-bottom: 4px;
+    }
+
+    .logo-text {
+      font-family: var(--heading-font);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--body-font);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: -2px;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--transition), color var(--transition);
+    }
+
+    .main-nav a:hover {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-family: var(--body-font);
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---- SEARCH BAR (hidden by default) ---- */
+    .search-bar {
+      display: none;
+      padding: 16px 0 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      background: var(--bg);
+    }
+
+    .search-form button {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .search-form button:hover {
+      background: #9e4a2e;
+    }
+
+    /* ---- TERMS PAGE SPECIFIC ---- */
+    .terms-hero {
+      padding: 48px 0 24px;
+      text-align: center;
+    }
+
+    .terms-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .terms-hero .lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 8px;
+    }
+
+    .terms-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 12px;
+      font-style: italic;
+    }
+
+    .terms-body {
+      padding: 24px 0 64px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .terms-body p {
+      margin-bottom: 1.5em;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .terms-body h2 {
+      margin-top: 2.4em;
+      margin-bottom: 0.8em;
+      font-size: 1.7rem;
+    }
+
+    .terms-body h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .terms-body h3 {
+      margin-top: 1.8em;
+      margin-bottom: 0.6em;
+      font-size: 1.25rem;
+      font-family: var(--body-font);
+      font-weight: 600;
+    }
+
+    .terms-body ul {
+      margin-bottom: 1.8em;
+      padding-left: 1.6em;
+    }
+
+    .terms-body li {
+      margin-bottom: 0.6em;
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .terms-body blockquote {
+      border-left: 4px solid var(--accent);
+      padding-left: 24px;
+      margin: 2em 0;
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .terms-body .note-box {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 20px 24px;
+      border-radius: var(--radius);
+      margin: 2em 0;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .terms-body .note-box strong {
+      font-weight: 600;
+    }
+
+    .terms-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5em 0;
+    }
+
+    /* ---- FOOTER (same as home) ---- */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+      margin-top: 48px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-family: var(--body-font);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 900px) {
+      .terms-hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav { gap: 16px; font-size: 0.8rem; }
+      .terms-hero h1 {
+        font-size: 2rem;
+      }
+      .terms-hero .lead {
+        font-size: 1rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .terms-body p, .terms-body li {
+        font-size: 0.98rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">E</div>
+      <div class="logo-text">Early Bird Bakes<span>Est. 2019</span></div>
+    </a>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html" style="color: var(--text); border-bottom-color: var(--accent);">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="search-toggle" onclick="toggleSearch()" aria-label="Toggle search">
+        <span>🔍</span> Search
+      </button>
+    </div>
+  </div>
+  <div class="container search-bar" id="searchBar">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <input type="text" id="searchInput" placeholder="Search recipes, techniques, stories..." aria-label="Search articles">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <!-- Terms Hero -->
+  <section class="container terms-hero">
+    <h1>Terms of Service</h1>
+    <p class="lead">The fine print, written in plain English. Here's what you agree to when you use Early Bird Bakes.</p>
+    <p class="terms-meta">Last updated: January 15, 2025</p>
+  </section>
+
+  <!-- Terms Body -->
+  <section class="container terms-body">
+    <p>Welcome to Early Bird Bakes. These Terms of Service ("Terms") govern your use of the website located at <strong>earlybirdbakes.com</strong> (the "Site") and all content, recipes, and services offered by Early Bird Bakes ("we," "us," or "our"). By accessing or using the Site, you agree to be bound by these Terms. If you don't agree, please don't use the Site. It's that simple.</p>
+
+    <div class="note-box">
+      <strong>Quick summary (not legally binding):</strong> Be kind, don't steal our content, bake at your own risk, and we're not liable if your sourdough turns out weird. The full details are below.
+    </div>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using the Site, you confirm that you are at least 13 years of age (or the age of majority in your jurisdiction) and that you agree to these Terms. If you are using the Site on behalf of an organization, you represent that you have the authority to bind that organization to these Terms.</p>
+    <p>We may update these Terms from time to time. When we do, we'll revise the "Last updated" date at the top of this page. Your continued use of the Site after any changes constitutes acceptance of the new Terms. We encourage you to review this page periodically.</p>
+
+    <h2>2. Use of the Site</h2>
+    <p>You may use the Site for personal, non-commercial purposes only. You agree not to:</p>
+    <ul>
+      <li>Copy, reproduce, republish, or distribute any content from the Site without our prior written permission (sharing links and brief excerpts is fine — see Section 4).</li>
+      <li>Use the Site for any unlawful purpose or in violation of any applicable laws or regulations.</li>
+      <li>Attempt to gain unauthorized access to any part of the Site, its servers, or any systems connected to the Site.</li>
+      <li>Interfere with or disrupt the Site's operation, including by transmitting viruses, malware, or any other harmful code.</li>
+      <li>Use automated systems (bots, scrapers, etc.) to access the Site in a way that sends more requests than a human could reasonably produce.</li>
+      <li>Impersonate Early Bird Bakes, Maya Collins, or any other person or entity.</li>
+    </ul>
+
+    <h2>3. Intellectual Property</h2>
+    <p>All content on the Site — including recipes, photographs, text, graphics, logos, and the overall "look and feel" — is the property of Early Bird Bakes or its content suppliers and is protected by copyright, trademark, and other intellectual property laws. You may not use our trademarks, logos, or branding without our prior written consent.</p>
+    <p>Recipes themselves (as lists of ingredients and basic instructions) are generally not protectable by copyright. However, our <strong>written instructions, headnotes, stories, photographs, and illustrations</strong> are fully protected. You may not copy our recipe write-ups verbatim or republish them in full without permission.</p>
+
+    <h2>4. Sharing and Attribution</h2>
+    <p>We love it when you share our recipes! Here's what's allowed:</p>
+    <ul>
+      <li><strong>Share links:</strong> Post a link to any page on our Site on social media, in a group chat, or on your own website. Totally fine. We appreciate it.</li>
+      <li><strong>Short excerpts:</strong> Quote a sentence or two with a clear link back to the original recipe. Also fine.</li>
+      <li><strong>Adaptations:</strong> If you significantly change a recipe, it becomes your own. We just ask that you credit Early Bird Bakes as the original inspiration with a link.</li>
+      <li><strong>Full republishing:</strong> Not allowed. Please don't copy our recipes in full and post them on your blog, in a newsletter, or in a cookbook. That's a violation of these Terms and copyright law.</li>
+    </ul>
+    <p>If you're a food blogger or journalist and want to feature one of our recipes, please <a href="contact.html">contact us</a>. We're usually happy to collaborate.</p>
+
+    <h2>5. User Contributions</h2>
+    <p>We may allow comments, reviews, or other user-generated content on the Site. By posting content, you grant us a non-exclusive, royalty-free, worldwide license to use, reproduce, modify, and display that content in connection with the Site. You represent that you own or have the necessary rights to post that content and that it doesn't violate any third-party rights.</p>
+    <p>We reserve the right to remove any user content that we deem, in our sole discretion, to be offensive, misleading, spammy, or otherwise inappropriate. We're not obligated to monitor user content, but we may do so.</p>
+
+    <h2>6. Recipe Results and Disclaimers</h2>
+    <p>Baking is both an art and a science. While we test our recipes thoroughly, results can vary based on factors outside our control: ingredient freshness, altitude, humidity, oven calibration, and technique. We can't guarantee that your results will match ours exactly.</p>
+    <div class="note-box">
+      <strong>Food safety:</strong> You are responsible for following safe food handling practices, including proper cooking temperatures, refrigeration, and allergen awareness. If you have allergies or dietary restrictions, always verify ingredients yourself. We are not liable for any adverse reactions or health issues resulting from the use of our recipes.
+    </div>
+    <p>Nutritional information, when provided, is an estimate and should not be relied upon for medical or dietary decisions. Consult a qualified professional for personalized advice.</p>
+
+    <h2>7. Third-Party Links</h2>
+    <p>The Site may contain links to third-party websites or services that we don't own or control. We have no responsibility for the content, privacy policies, or practices of any third-party sites. We provide these links for convenience only, and their inclusion doesn't imply endorsement. You access third-party sites at your own risk.</p>
+
+    <h2>8. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Early Bird Bakes, Maya Collins, and any contributors shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Site or any content therein. This includes, but is not limited to, damages for loss of profits, goodwill, data, or other intangible losses.</p>
+    <p>In no event shall our total liability to you for all claims exceed the amount you paid us (if any) to access the Site. Since the Site is free, this typically means zero dollars. We're not trying to be harsh — it's just standard legal language.</p>
+
+    <h2>9. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Early Bird Bakes and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, or expenses (including reasonable legal fees) arising out of or in any way connected with your access to or use of the Site, your violation of these Terms, or your violation of any third-party rights.</p>
+
+    <h2>10. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to the Site at any time, without notice, for any reason — including if we believe you've violated these Terms. You may also stop using the Site at any time. The provisions of these Terms that by their nature should survive termination (like intellectual property, disclaimers, and limitations of liability) will survive.</p>
+
+    <h2>11. Governing Law</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of the State of Oregon, United States, without regard to its conflict of law principles. Any dispute arising from these Terms or your use of the Site shall be resolved exclusively in the state or federal courts located in Multnomah County, Oregon. You consent to the personal jurisdiction of those courts.</p>
+
+    <h2>12. Severability</h2>
+    <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.</p>
+
+    <h2>13. Entire Agreement</h2>
+    <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a> and <a href="cookies.html">Cookies Policy</a>, constitute the entire agreement between you and Early Bird Bakes regarding the use of the Site. They supersede any prior agreements or understandings, whether written or oral.</p>
+
+    <hr>
+
+    <h2>14. Contact Us</h2>
+    <p>If you have any questions about these Terms of Service, please reach out:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:hello@earlybirdbakes.com">hello@earlybirdbakes.com</a></li>
+      <li><strong>Contact form:</strong> <a href="contact.html">earlybirdbakes.com/contact</a></li>
+      <li><strong>Mail:</strong> Early Bird Bakes, PO Box 12345, Portland, OR 97201</li>
+    </ul>
+
+    <p class="text-muted text-small mt-6" style="font-style: italic;">These Terms of Service are provided for general informational purposes and do not constitute legal advice. If you have specific legal concerns, please consult an attorney.</p>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom: 8px;">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:1.4rem;">E</div>
+        <div class="logo-text" style="font-size:1.4rem;">Early Bird Bakes</div>
+      </div>
+      <p>Honest recipes and kitchen stories from a small home bakery. Baked fresh since 2019.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Recipes</h4>
+      <ul>
+        <li><a href="index.html">Bread</a></li>
+        <li><a href="index.html">Pastry</a></li>
+        <li><a href="index.html">Cakes</a></li>
+        <li><a href="index.html">Technique</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="mailto:hello@earlybirdbakes.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2025 Early Bird Bakes. All rights reserved.</span>
+    <span>Made with flour, butter, and stubbornness.</span>
+  </div>
+</footer>
+
+<!-- ===== SCHEMA MARKUP ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Terms of Service · Early Bird Bakes",
+  "description": "Terms of Service for Early Bird Bakes — the terms and conditions for using our website and content.",
+  "url": "https://earlybirdbakes.com/terms.html",
+  "author": {
+    "@type": "Person",
+    "name": "Maya Collins"
+  },
+  "dateModified": "2025-01-15"
+}
+</script>
+
+<!-- ===== JAVASCRIPT (minimal, for search toggle & interactions) ===== -->
+<script>
+  // ---- SEARCH ----
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    if (!query) return;
+    // In a real site, this would filter articles. For now, redirect to home with a hash.
+    window.location.href = 'index.html?search=' + encodeURIComponent(query);
+  }
+
+  // ---- SMOOTH SCROLL FOR ANCHOR LINKS ----
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>

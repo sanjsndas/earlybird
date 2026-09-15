@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · Early Bird Bakes</title>
+  <meta name="description" content="Browse all recipe categories on Early Bird Bakes — from rustic breads to delicate pastries, cakes, and technique guides.">
+  <meta name="author" content="Maya Collins">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://earlybirdbakes.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · Early Bird Bakes">
+  <meta property="og:description" content="Browse all recipe categories on Early Bird Bakes — bread, pastry, cakes, and technique.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earlybirdbakes.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & styling (same as home) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---- RESET & VARIABLES (copy from home) ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fcf9f4;
+      --surface: #ffffff;
+      --border: #e7e0d8;
+      --text: #2c2722;
+      --muted: #6b625a;
+      --accent: #b45a3b;
+      --accent-soft: #f3e9e2;
+      --heading-font: 'DM Serif Display', Georgia, serif;
+      --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --article-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-hover: 0 8px 20px rgba(0,0,0,0.06);
+      --transition: 0.2s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.6;
+      font-size: 17px;
+      font-weight: 350;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.2rem; }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---- UTILITY ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .text-muted { color: var(--muted); }
+    .text-accent { color: var(--accent); }
+    .text-small { font-size: 0.875rem; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-4 { margin-top: 1rem; }
+    .mt-6 { margin-top: 2rem; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 2rem; }
+
+    /* ---- HEADER / NAV ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0 16px;
+      background-color: var(--surface);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-bottom: 4px;
+    }
+
+    .logo-text {
+      font-family: var(--heading-font);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--body-font);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: -2px;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--transition), color var(--transition);
+    }
+
+    .main-nav a:hover {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-family: var(--body-font);
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---- SEARCH BAR (hidden by default) ---- */
+    .search-bar {
+      display: none;
+      padding: 16px 0 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      background: var(--bg);
+    }
+
+    .search-form button {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .search-form button:hover {
+      background: #9e4a2e;
+    }
+
+    /* ---- CATEGORIES PAGE SPECIFIC ---- */
+    .categories-hero {
+      padding: 48px 0 24px;
+      text-align: center;
+    }
+
+    .categories-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .categories-hero .lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 32px;
+      padding: 40px 0 64px;
+    }
+
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .category-card-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background-color: var(--accent-soft);
+      display: block;
+    }
+
+    .category-card-content {
+      padding: 24px 24px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card-content h3 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      font-family: var(--heading-font);
+    }
+
+    .category-card-content p {
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .category-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      margin-top: 8px;
+    }
+
+    .category-meta .count {
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .category-meta .explore-link {
+      font-weight: 500;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color var(--transition);
+    }
+
+    .category-meta .explore-link:hover {
+      color: var(--accent);
+    }
+
+    /* ---- FEATURED CATEGORY SPOTLIGHT ---- */
+    .spotlight {
+      background: var(--accent-soft);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      margin: 16px 0 48px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .spotlight-content {
+      flex: 1 1 300px;
+    }
+
+    .spotlight-content .eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .spotlight-content h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .spotlight-content p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      max-width: 500px;
+    }
+
+    .spotlight-image {
+      flex: 1 1 260px;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .spotlight-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent);
+      color: white;
+      font-family: var(--body-font);
+      font-weight: 500;
+      font-size: 0.9rem;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+      letter-spacing: 0.02em;
+    }
+
+    .btn:hover {
+      background: #9e4a2e;
+      color: white;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1.5px solid var(--border);
+    }
+
+    .btn-outline:hover {
+      background: var(--surface);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---- FOOTER (same as home) ---- */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+      margin-top: 48px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-family: var(--body-font);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 900px) {
+      .categories-hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav { gap: 16px; font-size: 0.8rem; }
+      .categories-hero h1 {
+        font-size: 2rem;
+      }
+      .categories-hero .lead {
+        font-size: 1rem;
+      }
+      .category-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .spotlight {
+        padding: 28px 24px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .category-card-content {
+        padding: 20px;
+      }
+      .spotlight {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">E</div>
+      <div class="logo-text">Early Bird Bakes<span>Est. 2019</span></div>
+    </a>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html" style="color: var(--text); border-bottom-color: var(--accent);">Categories</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="search-toggle" onclick="toggleSearch()" aria-label="Toggle search">
+        <span>🔍</span> Search
+      </button>
+    </div>
+  </div>
+  <div class="container search-bar" id="searchBar">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <input type="text" id="searchInput" placeholder="Search recipes, techniques, stories..." aria-label="Search articles">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <!-- Categories Hero -->
+  <section class="container categories-hero">
+    <h1>Categories</h1>
+    <p class="lead">Every recipe, technique, and story — neatly sorted so you can find exactly what you're craving.</p>
+  </section>
+
+  <!-- Featured Spotlight -->
+  <div class="container">
+    <div class="spotlight">
+      <div class="spotlight-content">
+        <div class="eyebrow">Most Popular</div>
+        <h2>Bread & Sourdough</h2>
+        <p>From your first starter to advanced hydration, our bread section covers it all. Rustic loaves, soft sandwich bread, and everything in between.</p>
+        <a href="index.html" class="btn">Browse Bread Recipes →</a>
+      </div>
+      <div class="spotlight-image">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=450&fit=crop" alt="Freshly baked artisan sourdough bread" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Grid -->
+  <section class="container">
+    <div class="category-grid">
+      <!-- Card 1: Bread -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=600&h=338&fit=crop" alt="Rustic bread loaves on a wooden table" loading="lazy">
+        <div class="category-card-content">
+          <h3>Bread</h3>
+          <p>Sourdough, focaccia, baguettes, sandwich loaves, and more. Whether you're a beginner or a seasoned baker, there's a loaf here for you.</p>
+          <div class="category-meta">
+            <span class="count">24 recipes</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: Pastry -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&h=338&fit=crop" alt="Golden croissants and pastries" loading="lazy">
+        <div class="category-card-content">
+          <h3>Pastry</h3>
+          <p>Croissants, danishes, tarts, and laminated doughs. Flaky, buttery, and worth every fold. Patience required, joy guaranteed.</p>
+          <div class="category-meta">
+            <span class="count">18 recipes</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: Cakes -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=338&fit=crop" alt="Layer cake with frosting" loading="lazy">
+        <div class="category-card-content">
+          <h3>Cakes</h3>
+          <p>Layer cakes, loaf cakes, cheesecakes, and celebration bakes. From simple weeknight treats to showstoppers for special occasions.</p>
+          <div class="category-meta">
+            <span class="count">21 recipes</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4: Cookies & Bars -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=338&fit=crop" alt="Chocolate chip cookies on a baking sheet" loading="lazy">
+        <div class="category-card-content">
+          <h3>Cookies & Bars</h3>
+          <p>Chewy, crispy, gooey, and everything in between. Brownies, blondies, shortbread, and the perfect chocolate chip cookie.</p>
+          <div class="category-meta">
+            <span class="count">16 recipes</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5: Technique -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=338&fit=crop" alt="Baker kneading dough on a floured surface" loading="lazy">
+        <div class="category-card-content">
+          <h3>Technique</h3>
+          <p>Kneading, folding, proofing, laminating, and troubleshooting. Build your baking skills with our step-by-step guides and tips.</p>
+          <div class="category-meta">
+            <span class="count">12 guides</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6: Breakfast -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=338&fit=crop" alt="Pancakes with syrup and berries" loading="lazy">
+        <div class="category-card-content">
+          <h3>Breakfast</h3>
+          <p>Muffins, scones, pancakes, granola, and make-ahead morning bakes. Start your day with something homemade and warm.</p>
+          <div class="category-meta">
+            <span class="count">15 recipes</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 7: Savory -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=338&fit=crop" alt="Savory quiche and pies" loading="lazy">
+        <div class="category-card-content">
+          <h3>Savory Bakes</h3>
+          <p>Quiches, pot pies, savory tarts, and stuffed breads. Because baking isn't just for sweet tooths. Dinner is served.</p>
+          <div class="category-meta">
+            <span class="count">14 recipes</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 8: Seasonal -->
+      <article class="category-card">
+        <img class="category-card-image" src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600&h=338&fit=crop" alt="Seasonal pumpkin and spice baked goods" loading="lazy">
+        <div class="category-card-content">
+          <h3>Seasonal</h3>
+          <p>Pumpkin spice, holiday cookies, summer fruit tarts, and spring rhubarb. Bakes that celebrate the best of every season.</p>
+          <div class="category-meta">
+            <span class="count">19 recipes</span>
+            <a href="index.html" class="explore-link">Explore →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Simple call to action -->
+  <div class="container text-center" style="padding: 16px 0 64px;">
+    <p class="text-muted mb-4" style="font-size: 1.05rem;">Can't find what you're looking for? Try the search or drop us a line.</p>
+    <a href="contact.html" class="btn btn-outline">Suggest a recipe →</a>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom: 8px;">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:1.4rem;">E</div>
+        <div class="logo-text" style="font-size:1.4rem;">Early Bird Bakes</div>
+      </div>
+      <p>Honest recipes and kitchen stories from a small home bakery. Baked fresh since 2019.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Recipes</h4>
+      <ul>
+        <li><a href="index.html">Bread</a></li>
+        <li><a href="index.html">Pastry</a></li>
+        <li><a href="index.html">Cakes</a></li>
+        <li><a href="index.html">Technique</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="mailto:hello@earlybirdbakes.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2025 Early Bird Bakes. All rights reserved.</span>
+    <span>Made with flour, butter, and stubbornness.</span>
+  </div>
+</footer>
+
+<!-- ===== SCHEMA MARKUP ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Categories · Early Bird Bakes",
+  "description": "Browse all recipe categories on Early Bird Bakes — from rustic breads to delicate pastries, cakes, and technique guides.",
+  "url": "https://earlybirdbakes.com/categories.html",
+  "author": {
+    "@type": "Person",
+    "name": "Maya Collins"
+  },
+  "dateModified": "2025-01-15"
+}
+</script>
+
+<!-- ===== JAVASCRIPT (minimal, for search toggle & interactions) ===== -->
+<script>
+  // ---- SEARCH ----
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    if (!query) return;
+    // In a real site, this would filter articles. For now, redirect to home with a hash.
+    window.location.href = 'index.html?search=' + encodeURIComponent(query);
+  }
+
+  // ---- SMOOTH SCROLL FOR ANCHOR LINKS ----
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>

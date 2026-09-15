@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Early Bird Bakes</title>
+  <meta name="description" content="Privacy Policy for Early Bird Bakes. How we collect, use, and protect your information.">
+  <meta name="author" content="Maya Collins">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://earlybirdbakes.com/privacy.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy | Early Bird Bakes">
+  <meta property="og:description" content="How we collect, use, and protect your information at Early Bird Bakes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earlybirdbakes.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & basic styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---- RESET & VARIABLES ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fcf9f4;
+      --surface: #ffffff;
+      --border: #e7e0d8;
+      --text: #2c2722;
+      --muted: #6b625a;
+      --accent: #b45a3b;
+      --accent-soft: #f3e9e2;
+      --heading-font: 'DM Serif Display', Georgia, serif;
+      --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --article-width: 800px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-hover: 0 8px 20px rgba(0,0,0,0.06);
+      --transition: 0.2s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.7;
+      font-size: 17px;
+      font-weight: 350;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.6rem; }
+    h2 { font-size: 1.8rem; margin-top: 2.4rem; margin-bottom: 0.8rem; }
+    h3 { font-size: 1.3rem; margin-top: 1.8rem; margin-bottom: 0.4rem; }
+    h4 { font-size: 1.1rem; margin-top: 1.4rem; margin-bottom: 0.3rem; }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: #9e4a2e;
+      text-decoration: underline;
+    }
+
+    ul, ol {
+      margin-bottom: 1.2rem;
+      padding-left: 1.8rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ---- UTILITY ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .text-muted { color: var(--muted); }
+    .text-accent { color: var(--accent); }
+    .text-small { font-size: 0.875rem; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-4 { margin-top: 1rem; }
+    .mt-6 { margin-top: 2rem; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 2rem; }
+
+    /* ---- HEADER / NAV ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0 16px;
+      background-color: var(--surface);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-bottom: 4px;
+    }
+
+    .logo-text {
+      font-family: var(--heading-font);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--body-font);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: -2px;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--transition), color var(--transition);
+      text-decoration: none;
+    }
+
+    .main-nav a:hover {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+      text-decoration: none;
+    }
+
+    .main-nav a.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-family: var(--body-font);
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---- SEARCH BAR (hidden by default) ---- */
+    .search-bar {
+      display: none;
+      padding: 16px 0 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      background: var(--bg);
+    }
+
+    .search-form button {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .search-form button:hover {
+      background: #9e4a2e;
+    }
+
+    /* ---- PRIVACY PAGE SPECIFIC ---- */
+    .privacy-hero {
+      padding: 48px 0 24px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    .privacy-hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-hero .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .privacy-content {
+      padding-bottom: 72px;
+    }
+
+    .privacy-content h2 {
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .privacy-content h2:first-of-type {
+      border-top: none;
+      margin-top: 0;
+    }
+
+    .privacy-content .highlight-box {
+      background: var(--accent-soft);
+      padding: 24px 28px;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--accent);
+      margin: 24px 0 28px;
+    }
+
+    .privacy-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 28px;
+      font-size: 0.9rem;
+    }
+
+    .privacy-content th {
+      text-align: left;
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 8px 12px 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-content td {
+      padding: 10px 12px 10px 0;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .privacy-content td:last-child {
+      padding-right: 0;
+    }
+
+    /* ---- TOC ---- */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px 20px;
+      margin-bottom: 36px;
+      box-shadow: var(--shadow);
+    }
+
+    .toc h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      columns: 2;
+      column-gap: 32px;
+    }
+
+    @media (max-width: 600px) {
+      .toc ul {
+        columns: 1;
+      }
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+
+    .toc a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition);
+    }
+
+    .toc a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+      margin-top: 48px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-family: var(--body-font);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-col a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      .privacy-hero h1 { font-size: 2.1rem; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav { gap: 16px; font-size: 0.8rem; }
+      .privacy-content h2 { font-size: 1.5rem; }
+      .privacy-content h3 { font-size: 1.2rem; }
+    }
+
+    @media (max-width: 500px) {
+      .privacy-content .highlight-box {
+        padding: 18px 20px;
+      }
+      .privacy-content table {
+        font-size: 0.8rem;
+      }
+      .privacy-content th,
+      .privacy-content td {
+        padding: 6px 8px 6px 0;
+      }
+    }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">E</div>
+      <div class="logo-text">Early Bird Bakes<span>Est. 2019</span></div>
+    </a>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="search-toggle" onclick="toggleSearch()" aria-label="Toggle search">
+        <span>🔍</span> Search
+      </button>
+    </div>
+  </div>
+  <div class="container search-bar" id="searchBar">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <input type="text" id="searchInput" placeholder="Search recipes, techniques, stories..." aria-label="Search articles">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+  <!-- HERO -->
+  <section class="privacy-hero">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="text-muted" style="max-width: 600px; margin: 0 auto;">Your privacy matters — here's exactly how we handle your information.</p>
+      <p class="meta">Last updated: March 1, 2025</p>
+    </div>
+  </section>
+
+  <!-- PRIVACY CONTENT -->
+  <div class="article-container privacy-content">
+
+    <!-- TOC -->
+    <div class="toc">
+      <h3>On This Page</h3>
+      <ul>
+        <li><a href="#intro">1. Introduction</a></li>
+        <li><a href="#collect">2. Information We Collect</a></li>
+        <li><a href="#use">3. How We Use Your Info</a></li>
+        <li><a href="#cookies">4. Cookies & Tracking</a></li>
+        <li><a href="#sharing">5. Sharing & Disclosure</a></li>
+        <li><a href="#thirdparty">6. Third-Party Services</a></li>
+        <li><a href="#rights">7. Your Rights</a></li>
+        <li><a href="#security">8. Data Security</a></li>
+        <li><a href="#children">9. Children's Privacy</a></li>
+        <li><a href="#changes">10. Changes to This Policy</a></li>
+        <li><a href="#contact">11. Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- 1. Introduction -->
+    <h2 id="intro">1. Introduction</h2>
+    <p>Early Bird Bakes ("we," "us," or "our") operates the website <a href="https://earlybirdbakes.com">earlybirdbakes.com</a> (the "Site"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our Site.</p>
+    <p>We are a small, independent food blog based in Portland, Oregon. We believe in keeping things simple and transparent — both in our recipes and in how we handle your data. By using the Site, you consent to the practices described in this policy.</p>
+
+    <!-- 2. Information We Collect -->
+    <h2 id="collect">2. Information We Collect</h2>
+    <p>We collect information in a few different ways:</p>
+
+    <h3>Information you give us voluntarily</h3>
+    <ul>
+      <li><strong>Contact form submissions:</strong> When you use our contact form, we collect your name, email address, subject, and message content.</li>
+      <li><strong>Newsletter signups:</strong> If you subscribe to our newsletter (coming soon), we collect your email address and optionally your first name.</li>
+      <li><strong>Comments:</strong> If you leave a comment on a blog post, we collect your name, email, and comment content. (Comments are currently disabled.)</li>
+    </ul>
+
+    <h3>Information collected automatically</h3>
+    <ul>
+      <li><strong>Log data:</strong> Like most websites, our servers automatically record information such as your IP address, browser type, pages visited, and the time and date of your visit.</li>
+      <li><strong>Device information:</strong> We may collect information about the device you use to access the Site, including operating system and screen size.</li>
+      <li><strong>Analytics data:</strong> We use privacy-respecting analytics (see Section 6) to understand how visitors use the Site.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p><strong>In short:</strong> We only collect what we need to run the blog, respond to your messages, and understand what content is helpful. We do not sell your data. Ever.</p>
+    </div>
+
+    <!-- 3. How We Use Your Info -->
+    <h2 id="use">3. How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Purpose</th>
+          <th>Data Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Responding to your inquiries and messages</td>
+          <td>Name, email, message content</td>
+        </tr>
+        <tr>
+          <td>Sending occasional newsletters (if you opt in)</td>
+          <td>Email address, first name</td>
+        </tr>
+        <tr>
+          <td>Improving the Site and understanding reader preferences</td>
+          <td>Analytics data (anonymized)</td>
+        </tr>
+        <tr>
+          <td>Preventing spam and abuse</td>
+          <td>IP address, submission metadata</td>
+        </tr>
+        <tr>
+          <td>Complying with legal obligations</td>
+          <td>As required by law</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We will never use your information for purposes other than those listed here without your explicit consent.</p>
+
+    <!-- 4. Cookies & Tracking -->
+    <h2 id="cookies">4. Cookies & Tracking</h2>
+    <p>We use minimal cookies and similar tracking technologies on the Site. Here's what we use:</p>
+    <ul>
+      <li><strong>Essential cookies:</strong> Required for the Site to function properly (e.g., remembering if you've dismissed a banner).</li>
+      <li><strong>Analytics cookies:</strong> We use a privacy-focused analytics tool that does not track you across other websites and does not store personal identifiers.</li>
+      <li><strong>Preference cookies:</strong> If you interact with certain features (like the search bar), we may store a preference in your browser's local storage.</li>
+    </ul>
+    <p>We do <strong>not</strong> use advertising cookies, and we do not participate in cross-site tracking networks.</p>
+    <p>You can control cookies through your browser settings. Disabling cookies may affect some Site functionality, but the core content will remain accessible. For more details, see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+    <!-- 5. Sharing & Disclosure -->
+    <h2 id="sharing">5. Sharing & Disclosure</h2>
+    <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following limited circumstances:</p>
+    <ul>
+      <li><strong>Service providers:</strong> We use trusted third-party services (like an email delivery platform or analytics provider) that process data on our behalf. These providers are contractually obligated to protect your data and use it only for the services they provide to us.</li>
+      <li><strong>Legal requirements:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court order or subpoena).</li>
+      <li><strong>Protection of rights:</strong> We may disclose information when we believe it is necessary to protect our rights, property, or safety, or that of our readers or others.</li>
+    </ul>
+
+    <!-- 6. Third-Party Services -->
+    <h2 id="thirdparty">6. Third-Party Services</h2>
+    <p>We use a few carefully selected third-party services to help run the blog. Each has its own privacy policy, and we've chosen them with your privacy in mind:</p>
+    <ul>
+      <li><strong>Hosting:</strong> Our Site is hosted by a reputable provider that implements industry-standard security measures.</li>
+      <li><strong>Analytics:</strong> We use a privacy-respecting analytics service that does not track individual users across the web. All data is aggregated and anonymized.</li>
+      <li><strong>Fonts:</strong> We load fonts from Google Fonts. Google may collect your IP address when fonts are served. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+      <li><strong>Email:</strong> If you contact us, your message is processed by our email provider and stored securely.</li>
+    </ul>
+    <p>We do not use social media tracking pixels, advertising networks, or any other invasive third-party tools.</p>
+
+    <!-- 7. Your Rights -->
+    <h2 id="rights">7. Your Rights</h2>
+    <p>Depending on where you live, you may have certain rights regarding your personal information. We extend these rights to all our readers, regardless of location:</p>
+    <ul>
+      <li><strong>Right to access:</strong> You can request a copy of the personal information we hold about you.</li>
+      <li><strong>Right to correction:</strong> You can ask us to correct inaccurate or incomplete information.</li>
+      <li><strong>Right to deletion:</strong> You can ask us to delete your personal information, subject to certain legal exceptions.</li>
+      <li><strong>Right to restrict processing:</strong> You can ask us to limit how we use your information.</li>
+      <li><strong>Right to object:</strong> You can object to our processing of your information in certain circumstances.</li>
+      <li><strong>Right to data portability:</strong> You can request your data in a structured, commonly used format.</li>
+    </ul>
+    <p>To exercise any of these rights, please <a href="contact.html">contact us</a>. We will respond within 30 days.</p>
+    <p><strong>For EU/UK visitors:</strong> We process your data based on legitimate interests (running a blog) and consent (when you voluntarily submit information). You have the right to lodge a complaint with your local data protection authority.</p>
+
+    <!-- 8. Data Security -->
+    <h2 id="security">8. Data Security</h2>
+    <p>We take reasonable measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+    <ul>
+      <li>Using HTTPS encryption across the entire Site.</li>
+      <li>Limiting access to personal data to only those who need it (basically just Maya).</li>
+      <li>Regularly reviewing our data practices and third-party providers.</li>
+      <li>Storing data only as long as necessary for the purposes described in this policy.</li>
+    </ul>
+    <p>However, no method of transmission over the internet is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+
+    <!-- 9. Children's Privacy -->
+    <h2 id="children">9. Children's Privacy</h2>
+    <p>Early Bird Bakes is not directed to children under the age of 13 (or 16 in some jurisdictions). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please <a href="contact.html">contact us</a> and we will delete it promptly.</p>
+    <p>Parents and guardians: if your child loves baking (wonderful!), please supervise their internet use and consider using parental control tools.</p>
+
+    <!-- 10. Changes -->
+    <h2 id="changes">10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. When we do, we will:</p>
+    <ul>
+      <li>Update the "Last updated" date at the top of this page.</li>
+      <li>Post a notice on the homepage if the changes are significant.</li>
+      <li>Keep prior versions archived for your reference (available upon request).</li>
+    </ul>
+    <p>We encourage you to review this page periodically. Your continued use of the Site after any changes constitutes acceptance of the updated policy.</p>
+
+    <!-- 11. Contact -->
+    <h2 id="contact">11. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please reach out:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:privacy@earlybirdbakes.com">privacy@earlybirdbakes.com</a></li>
+      <li><strong>Contact form:</strong> <a href="contact.html">earlybirdbakes.com/contact</a></li>
+      <li><strong>Mail:</strong> Early Bird Bakes, PO Box 1234, Portland, OR 97201</li>
+    </ul>
+    <p>We're a small operation, but we take privacy seriously. Expect a personal reply within 2–3 days.</p>
+
+    <div class="highlight-box" style="margin-top: 40px;">
+      <p><strong>Thank you for trusting Early Bird Bakes.</strong> We're here to share recipes, not your data. If anything in this policy is unclear, just ask — we're happy to explain.</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom: 8px;">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:1.4rem;">E</div>
+        <div class="logo-text" style="font-size:1.4rem;">Early Bird Bakes</div>
+      </div>
+      <p>Honest recipes and kitchen stories from a small home bakery. Baked fresh since 2019.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Recipes</h4>
+      <ul>
+        <li><a href="index.html">Bread</a></li>
+        <li><a href="index.html">Pastry</a></li>
+        <li><a href="index.html">Cakes</a></li>
+        <li><a href="index.html">Technique</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="mailto:hello@earlybirdbakes.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2025 Early Bird Bakes. All rights reserved.</span>
+    <span>Made with flour, butter, and stubbornness.</span>
+  </div>
+</footer>
+
+<!-- ===== SCHEMA MARKUP ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy | Early Bird Bakes",
+  "description": "Privacy Policy for Early Bird Bakes. How we collect, use, and protect your information.",
+  "url": "https://earlybirdbakes.com/privacy.html",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Early Bird Bakes",
+    "email": "privacy@earlybirdbakes.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Portland",
+      "addressRegion": "OR",
+      "postalCode": "97201",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // ---- SEARCH (reused from main site) ----
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+    const query = document.getElementById('searchInput').value.trim();
+    if (!query) return;
+    // Redirect to home with search query
+    window.location.href = 'index.html?search=' + encodeURIComponent(query);
+  }
+
+  // ---- SMOOTH SCROLL FOR TOC (optional enhancement) ----
+  document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scroll is already enabled via CSS, but we can add active link highlighting if desired
+    const tocLinks = document.querySelectorAll('.toc a');
+    tocLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        // Let the default anchor behavior work, CSS handles smooth scroll
+        // Just close the search bar if it's open
+        const searchBar = document.getElementById('searchBar');
+        if (searchBar.classList.contains('active')) {
+          searchBar.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
